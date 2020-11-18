@@ -71,6 +71,20 @@ const Footer = styled.div`
 	border: 1px solid #000;
 `;
 
+const NavBlock = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+	border: 1px solid red;
+`;
+
+const style = {
+	'block': 'block',
+	'inlineBlock': 'inlineBlock' 
+}
+
 
 class App extends Component {
   constructor(props) {
@@ -85,12 +99,23 @@ class App extends Component {
 	    	<AppWrapper>
 
 	    		<HeaderParent>
-	    			<p>Links, Forest Image, Additional Icon Links</p>
+    				<NavBlock>
+    					<button>Extra</button>
+    					<button>Extra</button>
+    				</NavBlock>
+    				<NavBlock>
+    					<button>Home</button>
+    					<button>About</button>
+    					<button>Blog</button>
+    					<button>Coding</button>
+    					<button>Lessons</button>
+    					<button>Contact</button>
+    				</NavBlock>
 	    		</HeaderParent>
 
 	    		<WelcomeIntroduction>
-	    			<p>Headline</p>
-	    			<p>Body</p>
+	    			<h1>Headline</h1>
+	    			<h3>Hello Hello</h3>
 	    		</WelcomeIntroduction>
 
 	    		<IntroAndMission>
@@ -104,7 +129,10 @@ class App extends Component {
 
 	    		<Timeline />
 
-	    		<Footer />
+	    		<Footer>
+	    			<p>Site Map | Mission Statement | Web Accessibility | Privacy Policy</p>
+	    			<p>Copyright 2020 Code as Kids, All Rights Reserved</p>
+	    		</Footer>
 
 	    	</AppWrapper>
 

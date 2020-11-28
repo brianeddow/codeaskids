@@ -3,7 +3,7 @@ import { COLORS } from "../../css/styles";
 import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
 
-const AppWrapper = styled.div`
+const AboutWrapper = styled.div`
 	margin: 0 auto;
 `;
 
@@ -12,54 +12,6 @@ const HeaderParent = styled.div`
 	width: 100%;
 	height: 400px;
 	margin: 0 auto;
-	border: 1px solid #000;
-`;
-
-const WelcomeIntroduction = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 90vw;
-	height: 200px;
-	margin: 0 auto;
-	border: 1px solid #000;
-`;
-
-const IntroAndMission = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 90vw;
-	height: 200px;
-	margin: 0 auto;
-	border: 1px solid #000;
-`;
-
-const IntroVideo = styled.div`
-	display: flex;
-	justify-content: space-between;
-	width: 43.5vw;
-	height: 200px;
-	border: 1px solid #000;
-	margin-right: 30px;
-	background-color: #eee;
-`;
-
-const Mission = styled.div`
-	display: flex;
-	justify-content: space-between;
-	width: 43.5vw;
-	height: 200px;
-	border: 1px solid #000;
-	background-color: #aaa;
-`;
-
-const Timeline = styled.div`
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	height: 475px;
-	width: 90vw;
 	border: 1px solid #000;
 `;
 
@@ -81,6 +33,57 @@ const NavBlock = styled.div`
 	border: 1px solid red;
 `;
 
+const BodyWrapper = styled.div`
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding-top: 20px;
+`;
+
+const Main = styled.div`
+	display: flex;
+	justify-content: center;
+	width: 70%;
+	height: 700px;
+	border: 1px solid #000;
+`;
+
+const Aside = styled.div`
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 25%;
+	height: 700px;
+	border: 1px solid #000;
+`;
+
+const BlogPost = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 90%;
+	height: 205px;
+	border: 1px solid #000;
+`;
+
+const BlogPostColumn = styled.div`
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	width: 400px;
+	border: 1px solid #000;
+`;
+
+const SocialFeed = styled.div`
+	display: flex;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	margin: 20px;
+`;
+
 
 class App extends Component {
   constructor(props) {
@@ -92,7 +95,7 @@ class App extends Component {
 
     	<ErrorBoundary>
 
-	    	<AppWrapper>
+	    	<AboutWrapper>
 
 	    		<HeaderParent>
     				<NavBlock>
@@ -109,31 +112,34 @@ class App extends Component {
     				</NavBlock>
 	    		</HeaderParent>
 
-	    		<WelcomeIntroduction>
-	    			<h1>Headline</h1>
-	    			<h3>Hello Hello</h3>
-	    		</WelcomeIntroduction>
 
-	    		<IntroAndMission>
-	    			<IntroVideo>
-	    				<p>intro_video</p>
-	    			</IntroVideo>
-	    			<Mission>
-	    				<p>mission</p>
-	    			</Mission>
-	    		</IntroAndMission>
+	    		<BodyWrapper>
+		    		<Main>
+		    			<BlogPost>
+		    				<BlogPostColumn>
+		    					<p>Blog Title</p>
+		    					<button>Learn More</button>
+		    				</BlogPostColumn>
+		    				<BlogPostColumn>
+		    					<p>Blog feature image</p>
+		    				</BlogPostColumn>
+		    			</BlogPost>
+		    		</Main>
 
-	    		<Timeline>
-	    			<h1>Website Timeline</h1>
-	    			<img alt="Website Timeline Graphic" />
-	    		</Timeline>
+		    		<Aside>
+		    			<SocialFeed></SocialFeed>
+		    			<SocialFeed></SocialFeed>
+		    			<SocialFeed></SocialFeed>
+		    			<button>Volunteer</button>
+		    		</Aside>
+		    	</BodyWrapper>
 
 	    		<Footer>
 	    			<p>Site Map | Mission Statement | Web Accessibility | Privacy Policy</p>
 	    			<p>Copyright 2020 Code as Kids, All Rights Reserved</p>
 	    		</Footer>
 
-	    	</AppWrapper>
+	    	</AboutWrapper>
 
 	    </ErrorBoundary>
     );

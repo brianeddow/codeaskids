@@ -42,23 +42,21 @@ const BodyWrapper = styled.div`
 `;
 
 const BlockSection = styled.div`
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 90%;
 	min-height: 300px;
 	border: 1px solid #000;
+	margin: 10px;
 `;
 
-const Column = styled.div`
-	display: inline-block;
-	width: 49.84%;
-	height: 300px;
-	border: 1px solid #000;
-`;
-
-const ContactBlockTop = styled.div`
-	diplay: block;
-	width: 100%;
-	height: 100px;
+const Subject = styled.div`
+	display: flex;
+	justify-content: space-around;
+	height: 200px;
+	width: 200px;
+	margin: 15px;
 	border: 1px solid #000;
 `;
 
@@ -93,12 +91,21 @@ class App extends Component {
 
 	    		<BodyWrapper>
 	    			<BlockSection>
-	    				<ContactBlockTop>
-	    				</ContactBlockTop>
-	    				<Column>
-	    				</Column>
-	    				<Column>
-	    				</Column>
+	    				<h1>Lessons Summary</h1>
+		    		</BlockSection>
+		    		<BlockSection>
+		    			<h1>Code Examples</h1>
+		    		</BlockSection>
+		    		<BlockSection>
+		    			<h1>Quizzes</h1>
+		    		</BlockSection>
+		    		<BlockSection>
+		    			<h1>Other Subjects</h1>
+		    		</BlockSection>
+		    		<BlockSection>
+		    			<Subject />
+		    			<Subject />
+		    			<Subject />
 		    		</BlockSection>
 		    	</BodyWrapper>
 

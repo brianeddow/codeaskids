@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import { COLORS } from "../../css/styles";
 import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
+import Button from "react-bootstrap/Button";
 
 const AppWrapper = styled.div`
 	margin: 0 auto;
+	background: url('../../src/media/code-as-kids-medium-desktop-background.png');
+	background-size: cover;
 `;
 
 const HeaderParent = styled.div`
@@ -99,16 +102,16 @@ class App extends Component {
 
 	    		<HeaderParent>
     				<NavBlock>
-    					<button>Extra</button>
-    					<button>Extra</button>
+    					<Button variant="btn btn-danger btn-lg">Extra</Button>
+    					<Button variant="btn btn-danger btn-lg">Extra</Button>
     				</NavBlock>
     				<NavBlock>
-    					<button>Home</button>
-    					<button>About</button>
-    					<button>Blog</button>
-    					<button>Coding</button>
-    					<button>Lessons</button>
-    					<button>Contact</button>
+    					<Button variant="btn btn-danger btn-lg">Home</Button>
+    					<Button variant="btn btn-danger btn-lg">About</Button>
+    					<Button variant="btn btn-danger btn-lg">Blog</Button>
+    					<Button variant="btn btn-danger btn-lg">Coding</Button>
+    					<Button variant="btn btn-danger btn-lg">Lessons</Button>
+    					<Button variant="btn btn-danger btn-lg">Contact</Button>
     				</NavBlock>
 	    		</HeaderParent>
 

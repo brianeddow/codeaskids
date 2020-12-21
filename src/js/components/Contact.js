@@ -5,6 +5,8 @@ import ErrorBoundary from "./ErrorBoundary";
 
 const AboutWrapper = styled.div`
 	margin: 0 auto;
+	background: url('../../src/media/code-as-kids-medium-desktop-background.png');
+	background-size: cover;
 `;
 
 const HeaderParent = styled.div`

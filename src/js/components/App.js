@@ -2,7 +2,18 @@ import React, { Component } from "react";
 import { COLORS } from "../../css/styles";
 import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
-import Button from "react-bootstrap/Button";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+const BodyTag = styled.div`
+	position: absolute;
+	left: 0; top: 0;
+	right: 0; bottom;
+`;
 
 const AppWrapper = styled.div`
 	margin: 0 auto;
@@ -15,7 +26,7 @@ const HeaderParent = styled.div`
 	width: 100%;
 	height: 400px;
 	margin: 0 auto;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const WelcomeIntroduction = styled.div`
@@ -26,7 +37,7 @@ const WelcomeIntroduction = styled.div`
 	width: 90vw;
 	height: 400px;
 	margin: 0 auto;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const IntroAndMission = styled.div`
@@ -36,7 +47,7 @@ const IntroAndMission = styled.div`
 	width: 90vw;
 	height: 300px;
 	margin: 0 auto;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const IntroVideo = styled.div`
@@ -44,9 +55,10 @@ const IntroVideo = styled.div`
 	justify-content: space-between;
 	width: 43.5vw;
 	height: 300px;
-	border: 1px solid #000;
+	border: 0;
 	margin-right: 30px;
-	background-color: #eee;
+	background: #fff;
+	opacity: .2;
 `;
 
 const Mission = styled.div`
@@ -54,8 +66,9 @@ const Mission = styled.div`
 	justify-content: space-between;
 	width: 43.5vw;
 	height: 300px;
-	border: 1px solid #000;
-	background-color: #fff;
+	border: 0;
+	background: #fff;
+	opacity: .2;
 `;
 
 const Timeline = styled.div`
@@ -66,16 +79,23 @@ const Timeline = styled.div`
 	margin: 0 auto;
 	height: 475px;
 	width: 90vw;
-	border: 1px solid #000;
+	border: 0;
+`;
+
+const FooterWrapper = styled.div`
+	background: #fff;
+	opacity: .5;
 `;
 
 const Footer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
+	width: 99.8%;
 	height: 50px;
-	border: 1px solid #000;
+	color: #000;
+	border: 0;
+	opacity: 1;
 `;
 
 const NavBlock = styled.div`
@@ -84,7 +104,7 @@ const NavBlock = styled.div`
 	align-items: center;
 	height: 80px;
 	width: 100%;
-	border: 1px solid red;
+	border: 0;
 `;
 
 
@@ -98,20 +118,47 @@ class App extends Component {
 
     	<ErrorBoundary>
 
+    	<BodyTag>
+
 	    	<AppWrapper>
+
+	    		<Router>
+		    		<Switch>
+		    			<Route path="/" />
+		    			<Route path="/about" />
+		    			<Route path="/blog" />
+		    			<Route path="/coding" />
+		    			<Route path="/lessons" />
+		    			<Route path="/contact" />
+		    		</Switch>
+		    	</Router>
 
 	    		<HeaderParent>
     				<NavBlock>
-    					<Button variant="btn btn-danger btn-lg">Extra</Button>
-    					<Button variant="btn btn-danger btn-lg">Extra</Button>
+    					<button className="btn btn-success btn-lg">Extra</button>
+    					<button className="btn btn-success btn-lg">Extra</button>
     				</NavBlock>
     				<NavBlock>
-    					<Button variant="btn btn-danger btn-lg">Home</Button>
-    					<Button variant="btn btn-danger btn-lg">About</Button>
-    					<Button variant="btn btn-danger btn-lg">Blog</Button>
-    					<Button variant="btn btn-danger btn-lg">Coding</Button>
-    					<Button variant="btn btn-danger btn-lg">Lessons</Button>
-    					<Button variant="btn btn-danger btn-lg">Contact</Button>
+    					<Router>
+	  						<Link to="/">
+		    					<button className="btn btn-success btn-lg">Home</button>
+		    				</Link>
+		    				<Link to="/about">
+		    					<button className="btn btn-success btn-lg">About</button>
+		    				</Link>
+		    				<Link to="/blog">
+		    					<button className="btn btn-success btn-lg">Blog</button>
+		    				</Link>
+		    				<Link to="/coding">
+		    					<button className="btn btn-success btn-lg">Coding</button>
+		    				</Link>
+		    				<Link to="/lessons">
+		    					<button className="btn btn-success btn-lg">Lessons</button>
+		    				</Link>
+		    				<Link to="/contact">
+		    					<button className="btn btn-success btn-lg">Contact</button>
+		    				</Link>
+		    			</Router>
     				</NavBlock>
 	    		</HeaderParent>
 
@@ -146,12 +193,16 @@ Welcome to Code as Kids and a new ever growing educational website. A website us
 	    			</p>
 	    		</Timeline>
 
-	    		<Footer>
-	    			<p>Site Map | Mission Statement | Web Accessibility | Privacy Policy</p>
-	    			<p>Copyright 2020 Code as Kids, All Rights Reserved</p>
-	    		</Footer>
+	    		<FooterWrapper>
+		    		<Footer>
+		    			<p>Site Map | Mission Statement | Web Accessibility | Privacy Policy</p>
+		    			<p>Copyright 2020 Code as Kids, All Rights Reserved</p>
+		    		</Footer>
+		    	</FooterWrapper>
 
 	    	</AppWrapper>
+
+	    </BodyTag>
 
 	    </ErrorBoundary>
     );

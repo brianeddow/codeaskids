@@ -107,6 +107,12 @@ const NavBlock = styled.div`
 	border: 0;
 `;
 
+const Logo = styled.div`
+   height: 400px;
+   width: 400px;
+   position: absolute;
+`;
+
 
 class App extends Component {
   constructor(props) {
@@ -135,7 +141,7 @@ class App extends Component {
 
 					<HeaderParent>
 						<Logo>
-							<img src="../../src/media/code-as-kids-medium-desktop-background.png" />
+							<img src="../../src/media/header-title.png" />
 						</Logo>
     				<NavBlock>
     					<button className="btn btn-success btn-lg">Extra</button>
@@ -217,7 +223,7 @@ class App extends Component {
 
 	    		<FooterWrapper>
 					<Footer>
-							<img className="footer-logo" src="../../src/media/code-as-kids-medium-desktop-background.png" />
+						<img className="footer-logo" src="../../src/media/footer-logo.png" />
 						<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
 		    			<p>Copyright 2021 Code as Kids, All Rights Reserved</p>
 		    		</Footer>

@@ -30,72 +30,63 @@ const HeaderParent = styled.div`
 `;
 
 const WelcomeIntroduction = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 90vw;
-	height: 400px;
-	margin: 0 auto;
-	border: 0;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    border: 0;
+    text-align: center;
 `;
 
 const IntroAndMission = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 90vw;
+	width: 100%;
 	height: 300px;
 	margin: 0 auto;
 	border: 0;
 `;
 
 const IntroVideo = styled.div`
-	display: flex;
-	justify-content: space-between;
-	width: 43.5vw;
-	height: 300px;
+   text-align: center;
+    width: 48%;
+    margin: 1%;
+    height: 300px;
 	border: 0;
-	margin-right: 30px;
-	background: #fff;
-	opacity: .2;
+	background: url('../../src/media/flower-textbox-left.png');
+	background-size: cover;
 `;
 
 const Mission = styled.div`
-	display: flex;
-	justify-content: space-between;
-	width: 43.5vw;
-	height: 300px;
+    text-align: center;
+    width: 48%;
+    margin: 1%;
+    height: 300px;
 	border: 0;
-	background: #fff;
-	opacity: .2;
+	background: url('../../src/media/flower-textbox-right.png');
+	background-size: cover;
 `;
 
 const Timeline = styled.div`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-	margin: 0 auto;
-	height: 475px;
-	width: 90vw;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+	height: 500px;
 	border: 0;
 `;
 
 const FooterWrapper = styled.div`
 	background: #fff;
+    padding: 10px;
 	opacity: .5;
 `;
 
 const Footer = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 99.8%;
-	height: 50px;
+    text-align: center;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
 	color: #000;
-	border: 0;
-	opacity: 1;
 `;
 
 const NavBlock = styled.div`
@@ -175,7 +166,7 @@ class App extends Component {
 					<h1 className="page-title home-title">Welcome</h1>
 						<p className="introduction-text">Welcome to Code as Kids and a new ever growing educational website. 
 						A website used to teach, test, and shape kids' knowledge of coding. 
-						We update the website monthly to ensure kids (grades 3<sup>rd</sup> - 12<sup>th</sup> ) 
+						We update the website monthly to ensure kids (grades 3<sup>rd</sup> - 12<sup>th</sup>) 
 						can have a solid foundation on their journey to learning code. We strive to better your experience 
 						every step of the way and would love to hear your suggestions.
 						Tell your friends! We strive to make 508 compliant content on a web accessible website to leave no kid behind.
@@ -187,7 +178,8 @@ class App extends Component {
 							<h2>Hello</h2>
 							<p>A few words from the creators of Code as Kids</p>
 	    			</IntroVideo>
-	    			<Mission>
+						<Mission>
+							<h2>Mission Statement</h2>
 							<p>Code as Kids mission is to help kids learn to code professionally, creatively and neatly. 
 							We want to instill best practices to our users and students.
 							While maintaining a safe, fun and supportive community for all.
@@ -216,14 +208,14 @@ class App extends Component {
 							<li>Social Media Created</li>
 							<li>First Video Content</li>
 							<li>Website Soft Launch</li>
-					</ul>
+					    </ul>
 
 	    		
 	    		</Timeline>
 
 	    		<FooterWrapper>
 					<Footer>
-						<img className="footer-logo" src="../../src/media/footer-logo.png" />
+					    <img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100"/>
 						<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
 		    			<p>Copyright 2021 Code as Kids, All Rights Reserved</p>
 		    		</Footer>

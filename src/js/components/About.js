@@ -178,10 +178,13 @@ class App extends Component {
 		    		</BlockWrapper>
 	    		</LearnMore>
 
-	    		<Footer>
-	    			<p>Site Map | Mission Statement | Web Accessibility | Privacy Policy</p>
-	    			<p>Copyright 2020 Code as Kids, All Rights Reserved</p>
-	    		</Footer>
+				<FooterWrapper>
+					<Footer>
+						<img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100" />
+						<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
+						<p>Copyright 2021 Code as Kids, All Rights Reserved</p>
+					</Footer>
+				</FooterWrapper>
 
 	    	</AboutWrapper>
 

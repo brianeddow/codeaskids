@@ -93,7 +93,7 @@ class App extends Component {
 
 	    		<BodyWrapper>
 	    			<BlockSection>
-	    				<h1>HTML Summary</h1>
+						<h1>HTML</h1>
 		    		</BlockSection>
 		    		<BlockSection>
 		    			<h1>Code Examples</h1>

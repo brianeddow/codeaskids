@@ -119,7 +119,7 @@ class App extends Component {
 		    		<Main>
 		    			<BlogPost>
 		    				<BlogPostColumn>
-		    					<p>Blog Title</p>
+		    					<h2>Blog Title</h2>
 		    					<button>Learn More</button>
 		    				</BlogPostColumn>
 		    				<BlogPostColumn>

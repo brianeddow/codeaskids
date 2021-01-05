@@ -133,7 +133,10 @@ class App extends Component {
 		    		</Switch>
 		    	</Router>
 
-	    		<HeaderParent>
+					<HeaderParent>
+						<Logo>
+							<img src="../../src/media/code-as-kids-medium-desktop-background.png" />
+						</Logo>
     				<NavBlock>
     					<button className="btn btn-success btn-lg">Extra</button>
     					<button className="btn btn-success btn-lg">Extra</button>
@@ -163,40 +166,60 @@ class App extends Component {
 	    		</HeaderParent>
 
 	    		<WelcomeIntroduction>
-	    			<h1>Headline</h1>
-	    			<p>
-	    				Code as Kids
-Welcome to Code as Kids and a new ever growing educational website. A website used to teach, test, and shape kids' knowledge of coding. We update the website monthly to ensure kids (grades 3rd - 12th) can have a solid foundation on their journey to learning code. We strive to better your experience every step of the way and would love to hear your suggestions. Tell your friends! We strive to make 508 compliant content on a web accessible website to leave no kid behind. Here we believe coding is for everyone!
-	    			</p>
+					<h1 className="page-title home-title">Welcome</h1>
+						<p className="introduction-text">Welcome to Code as Kids and a new ever growing educational website. 
+						A website used to teach, test, and shape kids' knowledge of coding. 
+						We update the website monthly to ensure kids (grades 3<sup>rd</sup> - 12<sup>th</sup> ) 
+						can have a solid foundation on their journey to learning code. We strive to better your experience 
+						every step of the way and would love to hear your suggestions.
+						Tell your friends! We strive to make 508 compliant content on a web accessible website to leave no kid behind.
+						Our website is constantly being updated and adding new features. Here we believe coding is for everyone!</p>
 	    		</WelcomeIntroduction>
 
 	    		<IntroAndMission>
 	    			<IntroVideo>
-	    				<p>intro_video</p>
+							<h2>Hello</h2>
+							<p>A few words from the creators of Code as Kids</p>
 	    			</IntroVideo>
 	    			<Mission>
-	    				<p>Code as Kids mission is to help kids learn to code professionally, creatively and neatly. The website serves as a great portal and foundation to launch kids' interest in coding, technology and science. A group of growing volunteers that want to give the gift of learning.</p>
+							<p>Code as Kids mission is to help kids learn to code professionally, creatively and neatly. 
+							We want to instill best practices to our users and students.
+							While maintaining a safe, fun and supportive community for all.
+							The website serves as a great portal and foundation to launch kids' interest in coding, 
+							technology and science. A group of growing volunteers that want
+							to give the gift of learning.</p>
 	    			</Mission>
 	    		</IntroAndMission>
 
 	    		<Timeline>
-	    			<h1>Website Timeline</h1>
-	    			<p>
-	    			2020 
-						- Idea Created 
-						- Website and Foundation creation
-						- Social Media Created
-						- Website soft launch
-						- 
-						2021
-						- First video content
-	    			</p>
+	    			<h2>Website Timeline</h2>
+	    		
+					<h3>2020</h3> 
+						<ul className="timeline-list">
+							<li>Idea Created </li>
+							<li>Create Sitemap</li>
+							<li>Create Wireframes</li>
+							<li>Create First Draft of Contact</li>
+							<li>Website and Foundation Creation</li>
+					    </ul>
+					
+				    <h3>2021</h3> 
+						<ul className="timeline-list">
+							<li>Website Development</li>
+							<li>First Lesson Plan Created</li>
+							<li>Social Media Created</li>
+							<li>First Video Content</li>
+							<li>Website Soft Launch</li>
+					</ul>
+
+	    		
 	    		</Timeline>
 
 	    		<FooterWrapper>
-		    		<Footer>
-		    			<p>Site Map | Mission Statement | Web Accessibility | Privacy Policy</p>
-		    			<p>Copyright 2020 Code as Kids, All Rights Reserved</p>
+					<Footer>
+							<img className="footer-logo" src="../../src/media/code-as-kids-medium-desktop-background.png" />
+						<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
+		    			<p>Copyright 2021 Code as Kids, All Rights Reserved</p>
 		    		</Footer>
 		    	</FooterWrapper>
 

@@ -73,6 +73,8 @@ const Timeline = styled.div`
     margin-left: auto;
 	height: 500px;
 	border: 0;
+    font-size: 24px; 
+    color: ffff#;
 `;
 
 const FooterWrapper = styled.div`
@@ -163,7 +165,7 @@ class App extends Component {
 	    		</HeaderParent>
 
 	    		<WelcomeIntroduction>
-					<h1 className="page-title home-title">Welcome</h1>
+						<img src="../../src/media/welcome-title.png" width="350" />
 						<p className="introduction-text">Welcome to Code as Kids and a new ever growing educational website. 
 						A website used to teach, test, and shape kids' knowledge of coding. 
 						We update the website monthly to ensure kids (grades 3<sup>rd</sup> - 12<sup>th</sup>) 
@@ -175,11 +177,11 @@ class App extends Component {
 
 	    		<IntroAndMission>
 	    			<IntroVideo>
-							<h2>Hello</h2>
+							<img src="../../src/media/hello-title.png" width="250" />
 							<p>A few words from the creators of Code as Kids</p>
 	    			</IntroVideo>
 						<Mission>
-							<h2>Mission Statement</h2>
+							<img  src="../../src/media/our-mission-title.png" width="250" />
 							<p>Code as Kids mission is to help kids learn to code professionally, creatively and neatly. 
 							We want to instill best practices to our users and students.
 							While maintaining a safe, fun and supportive community for all.
@@ -188,11 +190,12 @@ class App extends Component {
 							to give the gift of learning.</p>
 	    			</Mission>
 	    		</IntroAndMission>
-
+						
 	    		<Timeline>
-	    			<h2>Website Timeline</h2>
-	    		
-					<h3>2020</h3> 
+					
+						<p><img src="../../src/media/website-timeline-title.png" width="550" /></p>
+
+						<img src="../../src/media/2020.png" width="150"  />
 						<ul className="timeline-list">
 							<li>Idea Created </li>
 							<li>Create Sitemap</li>
@@ -201,7 +204,7 @@ class App extends Component {
 							<li>Website and Foundation Creation</li>
 					    </ul>
 					
-				    <h3>2021</h3> 
+						<img src="../../src/media/2021.png" width="150"  />
 						<ul className="timeline-list">
 							<li>Website Development</li>
 							<li>First Lesson Plan Created</li>

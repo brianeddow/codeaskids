@@ -49,22 +49,26 @@ const IntroAndMission = styled.div`
 
 const IntroVideo = styled.div`
    text-align: center;
-    width: 48%;
-    margin: 1%;
+    width: 900px;
+    margin: 2em;
     height: 300px;
+    padding-top: 6em;
 	border: 0;
-	background: url('../../src/media/flower-textbox-left.png');
-	background-size: cover;
+	background: url('../../src/media/jungle-textbox.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 `;
 
 const Mission = styled.div`
     text-align: center;
-    width: 48%;
-    margin: 1%;
+    width: 900px;
+    margin: 2em;
     height: 300px;
+    padding-top: 6em;
 	border: 0;
-	background: url('../../src/media/flower-textbox-right.png');
-	background-size: cover;
+	background: url('../../src/media/jungle-textbox.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 `;
 
 const Timeline = styled.div`
@@ -181,7 +185,7 @@ class App extends Component {
 							<p>A few words from the creators of Code as Kids</p>
 	    			</IntroVideo>
 						<Mission>
-							<img  src="../../src/media/our-mission-title.png" width="250" />
+							<img  src="../../src/media/our-mission-title.png" width="450" />
 							<p>Code as Kids mission is to help kids learn to code professionally, creatively and neatly. 
 							We want to instill best practices to our users and students.
 							While maintaining a safe, fun and supportive community for all.

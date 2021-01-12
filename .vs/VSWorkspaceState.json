@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\js",
+    "\\src\\js\\components"
   ],
+  "SelectedNode": "\\src\\js\\components\\Contact.js",
   "PreviewInSolutionExplorer": false
 }

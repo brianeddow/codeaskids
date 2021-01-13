@@ -30,11 +30,11 @@ const HeaderParent = styled.div`
 `;
 
 const WelcomeIntroduction = styled.div`
-    width: 100%;
-    height: 300px;
-    margin: 0 auto;
-    border: 0;
-    text-align: center;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border: 0;
+  text-align: center;
 `;
 
 const IntroAndMission = styled.div`
@@ -48,50 +48,50 @@ const IntroAndMission = styled.div`
 `;
 
 const IntroVideo = styled.div`
-   text-align: center;
-    width: 900px;
-    margin: 2em;
-    height: 300px;
-    padding-top: 6em;
+	text-align: center;
+  width: 900px;
+  margin: 2em;
+  height: 300px;
+padding-top: 6em;
 	border: 0;
 	background: url('../../src/media/jungle-textbox.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 `;
 
 const Mission = styled.div`
-    text-align: center;
-    width: 900px;
-    margin: 2em;
-    height: 300px;
-    padding-top: 6em;
+  text-align: center;
+  width: 900px;
+  margin: 2em;
+  height: 300px;
+  padding-top: 6em;
 	border: 0;
 	background: url('../../src/media/jungle-textbox.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 `;
 
 const Timeline = styled.div`
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
 	height: 500px;
 	border: 0;
-    font-size: 24px; 
-    color: ffff#;
+  font-size: 24px; 
+  color: ffff#;
 `;
 
 const FooterWrapper = styled.div`
 	background: #fff;
-    padding: 10px;
+  padding: 10px;
 	opacity: .5;
 `;
 
 const Footer = styled.div`
-    text-align: center;
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
+  text-align: center;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
 	color: #000;
 `;
 
@@ -105,9 +105,9 @@ const NavBlock = styled.div`
 `;
 
 const Logo = styled.div`
-   height: 400px;
-   width: 400px;
-   position: absolute;
+	height: 400px;
+	width: 400px;
+	position: absolute;
 `;
 
 

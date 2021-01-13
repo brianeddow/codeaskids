@@ -89,7 +89,7 @@ const NavBlock = styled.div`
 `;
 
 
-class App extends Component {
+class About extends Component {
   constructor(props) {
     super(props);
   }
@@ -193,4 +193,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default About;

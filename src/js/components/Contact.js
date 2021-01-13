@@ -65,7 +65,7 @@ const ContactBlockTop = styled.div`
 `;
 
 
-class App extends Component {
+class Contact extends Component {
   constructor(props) {
     super(props);
   }
@@ -119,4 +119,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Contact;

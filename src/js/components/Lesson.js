@@ -63,7 +63,7 @@ const Subject = styled.div`
 `;
 
 
-class App extends Component {
+class Lesson extends Component {
   constructor(props) {
     super(props);
   }
@@ -126,4 +126,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Lesson;

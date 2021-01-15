@@ -3,6 +3,25 @@ import { COLORS } from "../../css/styles";
 import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
 
+import Main from "./Main";
+import About from "./About";
+import Blog from "./Blog";
+import Coding from "./Coding";
+import Lessons from "./Lessons";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+const BodyTag = styled.div`
+	position: absolute;
+	left: 0; top: 0;
+	right: 0; bottom;
+`;
+
 const AboutWrapper = styled.div`
 	margin: 0 auto;
 	background: url('../../src/media/code-as-kids-medium-desktop-background.png');
@@ -75,6 +94,8 @@ class Contact extends Component {
 
     	<ErrorBoundary>
 
+    		<BodyTag>
+
 	    	<AboutWrapper>
 
 	    		<HeaderParent>
@@ -83,12 +104,35 @@ class Contact extends Component {
     					<button>Extra</button>
     				</NavBlock>
     				<NavBlock>
-    					<button>Home</button>
-    					<button>About</button>
-    					<button>Blog</button>
-    					<button>Coding</button>
-    					<button>Lessons</button>
-    					<button>Contact</button>
+    					<Router>
+	  						<Link to="/">
+		    					<button className="btn btn-success btn-lg">Home</button>
+		    				</Link>
+		    				<Link to="/about">
+		    					<button className="btn btn-success btn-lg">About</button>
+		    				</Link>
+		    				<Link to="/blog">
+		    					<button className="btn btn-success btn-lg">Blog</button>
+		    				</Link>
+		    				<Link to="/coding">
+		    					<button className="btn btn-success btn-lg">Coding</button>
+		    				</Link>
+		    				<Link to="/lessons">
+		    					<button className="btn btn-success btn-lg">Lessons</button>
+		    				</Link>
+		    				<Link to="/contact">
+		    					<button className="btn btn-success btn-lg">Contact</button>
+		    				</Link>
+
+				    		<Switch>
+				    			<Route exact path="/"><Main /></Route>
+				    			<Route path="/about"><About /></Route>
+				    			<Route path="/blog"><Blog /></Route>
+				    			<Route path="/coding"><Coding /></Route>
+				    			<Route path="/lessons"><Lessons /></Route>
+				    			<Route path="#"></Route>
+				    		</Switch>
+				    	</Router>
     				</NavBlock>
 	    		</HeaderParent>
 
@@ -104,15 +148,15 @@ class Contact extends Component {
 		    		</BlockSection>
 		    	</BodyWrapper>
 
-				<FooterWrapper>
 					<Footer>
 						<img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100" />
 						<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
 						<p>Copyright 2021 Code as Kids, All Rights Reserved</p>
 					</Footer>
-				</FooterWrapper>
 
 	    	</AboutWrapper>
+
+	    	</BodyTag>
 
 	    </ErrorBoundary>
     );

@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import { COLORS } from "../../css/styles";
 import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
+
+import About from "./About";
+import Blog from "./Blog";
+import Coding from "./Coding";
+import Lessons from "./Lessons";
+import Contact from "./Contact";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -111,7 +118,7 @@ const Logo = styled.div`
 `;
 
 
-class App extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
   }
@@ -125,17 +132,6 @@ class App extends Component {
 
 	    	<AppWrapper>
 
-	    		<Router>
-		    		<Switch>
-		    			<Route path="/" />
-		    			<Route path="/about" />
-		    			<Route path="/blog" />
-		    			<Route path="/coding" />
-		    			<Route path="/lessons" />
-		    			<Route path="/contact" />
-		    		</Switch>
-		    	</Router>
-
 					<HeaderParent>
 						<Logo>
 							<img src="../../src/media/header-title.png" />
@@ -146,7 +142,7 @@ class App extends Component {
     				</NavBlock>
     				<NavBlock>
     					<Router>
-	  						<Link to="/">
+	  						<Link to="#">
 		    					<button className="btn btn-success btn-lg">Home</button>
 		    				</Link>
 		    				<Link to="/about">
@@ -164,7 +160,16 @@ class App extends Component {
 		    				<Link to="/contact">
 		    					<button className="btn btn-success btn-lg">Contact</button>
 		    				</Link>
-		    			</Router>
+
+				    		<Switch>
+				    			<Route exact path="/"></Route>
+				    			<Route path="/about"><About /></Route>
+				    			<Route path="/blog"><Blog /></Route>
+				    			<Route path="/coding"><Coding /></Route>
+				    			<Route path="/lessons"><Lessons /></Route>
+				    			<Route path="/contact"><Contact /></Route>
+				    		</Switch>
+				    	</Router>
     				</NavBlock>
 	    		</HeaderParent>
 
@@ -237,4 +242,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;

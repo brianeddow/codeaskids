@@ -91,7 +91,12 @@ const Timeline = styled.div`
 const FooterWrapper = styled.div`
 	background: #fff;
   padding: 10px;
-	opacity: .5;
+	opacity: 0.7;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 7px;
+  border-image-source: linear-gradient(to bottom, yellow, green);
 `;
 
 const Footer = styled.div`
@@ -137,8 +142,8 @@ class Home extends Component {
 							<img src="../../src/media/header-title.png" />
 						</Logo>
     				<NavBlock>
-    					<button className="btn btn-success btn-lg">Extra</button>
-    					<button className="btn btn-success btn-lg">Extra</button>
+    					<button className="btn btn-success btn-sm">Extra</button>
+    					<button className="btn btn-success btn-sm">Extra</button>
     				</NavBlock>
     				<NavBlock>
     					<Router>

@@ -174,7 +174,8 @@ class App extends Component {
     				</NavBlock>
 	    		</HeaderParent>
 
-					<WelcomeIntroduction className="testing">
+					<WelcomeIntroduction className="row">
+					 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<img src="../../src/media/welcome-title.png" width="350" />
 						<p className="introduction-text">Welcome to Code as Kids and a new ever growing educational website. 
 						A website used to teach, test, and shape kids' knowledge of coding. 
@@ -183,14 +184,15 @@ class App extends Component {
 						every step of the way and would love to hear your suggestions.
 						Tell your friends! We strive to make 508 compliant content on a web accessible website to leave no kid behind.
 						Our website is constantly being updated and adding new features. Here we believe coding is for everyone!</p>
-	    		</WelcomeIntroduction>
+	    	          </div>
+					</WelcomeIntroduction>
 
-	    		<IntroAndMission>
-	    			<IntroVideo>
+					<IntroAndMission className="row">
+						<IntroVideo className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 							<img src="../../src/media/hello-title.png" width="250" />
 							<p>A few words from the creators of Code as Kids</p>
 	    			</IntroVideo>
-						<Mission>
+						<Mission className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 							<img  src="../../src/media/our-mission-title.png" width="450" />
 							<p>Code as Kids mission is to help kids learn to code professionally, creatively and neatly. 
 							We want to instill best practices to our users and students.
@@ -201,8 +203,8 @@ class App extends Component {
 	    			</Mission>
 	    		</IntroAndMission>
 						
-	    		<Timeline>
-					
+					<Timeline className="row">
+					 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<p><img src="../../src/media/website-timeline-title.png" width="550" /></p>
 
 						<img src="../../src/media/2020.png" width="150"  />
@@ -223,14 +225,15 @@ class App extends Component {
 							<li>Website Soft Launch</li>
 					    </ul>
 
-	    		
+	    		     </div>
 	    		</Timeline>
 
-	    		<FooterWrapper>
-					<Footer>
+					<FooterWrapper className="row">
+					 <Footer className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 					    <img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100"/>
 						<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
-		    			<p>Copyright 2021 Code as Kids, All Rights Reserved</p>
+							<p>Copyright 2021 Code as Kids, All Rights Reserved <i>Version 1.0</i></p>
+							
 		    		</Footer>
 		    	</FooterWrapper>
 

@@ -72,13 +72,19 @@ const Mission = styled.div`
 `;
 
 const Timeline = styled.div`
-    display: table;
     margin-right: auto;
     margin-left: auto;
-	height: 500px;
 	border: 0;
     font-size: 24px; 
     color: ffff#;
+    width: 100%;
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    border: 0;
+    background: url(../../src/media/jungle-textbox.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 `;
 
 const FooterWrapper = styled.div`
@@ -168,7 +174,7 @@ class App extends Component {
     				</NavBlock>
 	    		</HeaderParent>
 
-	    		<WelcomeIntroduction>
+					<WelcomeIntroduction className="testing">
 						<img src="../../src/media/welcome-title.png" width="350" />
 						<p className="introduction-text">Welcome to Code as Kids and a new ever growing educational website. 
 						A website used to teach, test, and shape kids' knowledge of coding. 

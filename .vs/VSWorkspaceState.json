@@ -3,8 +3,10 @@
     "",
     "\\src",
     "\\src\\js",
-    "\\src\\js\\components"
+    "\\src\\js\\actions",
+    "\\src\\js\\components",
+    "\\src\\media"
   ],
-  "SelectedNode": "\\src\\js\\components\\Contact.js",
+  "SelectedNode": "\\src\\js\\components\\App.js",
   "PreviewInSolutionExplorer": false
 }

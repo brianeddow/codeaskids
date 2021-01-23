@@ -79,29 +79,19 @@ const Mission = styled.div`
 `;
 
 const Timeline = styled.div`
-<<<<<<< HEAD:src/js/components/Main.js
-  display: table;
   margin-right: auto;
   margin-left: auto;
-	height: 500px;
 	border: 0;
   font-size: 24px; 
   color: ffff#;
-=======
-    margin-right: auto;
-    margin-left: auto;
-	border: 0;
-    font-size: 24px; 
-    color: ffff#;
-    width: 100%;
-    text-align: center;
-    padding-top: 6em;
-    padding-bottom: 6em;
-    border: 0;
-    background: url(../../src/media/jungle-textbox.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
->>>>>>> 0157f97abfad29d59764952ec31a55482517fda9:src/js/components/App.js
+  width: 100%;
+  text-align: center;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  border: 0;
+  background: url(../../src/media/jungle-textbox.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 `;
 
 const FooterWrapper = styled.div`

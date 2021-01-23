@@ -122,8 +122,8 @@ class Blog extends Component {
 
 	    		<HeaderParent>
     				<NavBlock>
-    					<button>Extra</button>
-    					<button>Extra</button>
+    					<button className="btn btn-success btn-sm">Extra</button>
+    					<button className="btn btn-success btn-sm">Extra</button>
     				</NavBlock>
     				<NavBlock>
     					<Router>

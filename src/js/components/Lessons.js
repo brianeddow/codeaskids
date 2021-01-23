@@ -82,7 +82,7 @@ const Subject = styled.div`
 `;
 
 
-class Lesson extends Component {
+class Lessons extends Component {
   constructor(props) {
     super(props);
   }
@@ -98,8 +98,8 @@ class Lesson extends Component {
 
 	    		<HeaderParent>
     				<NavBlock>
-    					<button>Extra</button>
-    					<button>Extra</button>
+    					<button className="btn btn-success btn-sm">Extra</button>
+    					<button className="btn btn-success btn-sm">Extra</button>
     				</NavBlock>
     				<NavBlock>
     					<Router>
@@ -170,4 +170,4 @@ class Lesson extends Component {
   }
 }
 
-export default Lesson;
+export default Lessons;

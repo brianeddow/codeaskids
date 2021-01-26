@@ -137,16 +137,16 @@ class Coding extends Component {
 
 	    		<BodyWrapper>
 	    			<BlockSection>
-						<h1>HTML</h1>
+					    <img src="../../src/media/html-title.png" width="350" />
 		    		</BlockSection>
 		    		<BlockSection>
-		    			<h1>Code Examples</h1>
+						<img src="../../src/media/code-examples-title.png" width="250" />
 		    		</BlockSection>
 		    		<BlockSection>
-		    			<h1>FAQs</h1>
+						<img src="../../src/media/faq-title.png" width="350" />
 		    		</BlockSection>
 		    		<BlockSection>
-		    			<h1>Other Subjects</h1>
+					    <img src="../../src/media/other-subjects-title.png" width="350" />
 		    		</BlockSection>
 		    		<BlockSection>
 		    			<Subject />

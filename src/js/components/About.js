@@ -162,7 +162,7 @@ class About extends Component {
 
 				<WelcomeIntroduction className="row">
 				 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-					<h1 className="page-title home-title">About Us</h1>
+					<img src="../../src/media/about-us-title.png" width="350" />
 					<p className="introduction-text">Code for Kids is a new website for kids ranging from 3<sup>rd</sup> to 12<sup>th</sup>grade curious about creating with code. Our website contains coding quizzes, blogs, templates, lessons. Code for Kids hopes to be the coding community of tomorrow. We look forward to growing with you and giving you as a user the experience you all deserve.  </p>
 	    		 </div>
 				</WelcomeIntroduction>
@@ -170,11 +170,10 @@ class About extends Component {
 					<IntroAndMission className="row">
 						<Faq>
 						 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-							<h2>Frequently Asked Questions (FAQs)</h2>
+							<img src="../../src/media/faq-title.png" width="250" />
 
 							<a href="#question-one" className="btn btn-info" data-toggle="collapse">When was this website created?</a>
 							<div id="question-one" className="collapse">
-								<p><strong>A:</strong> The website launched on XXXXX, XX, 2021.</p>
 							</div>
                             <br/>
 							<a href="#question-two" className="btn btn-info" data-toggle="collapse">How can I help?</a>
@@ -243,7 +242,7 @@ class About extends Component {
 		    			<LearnMoreItem>Twitter CTA</LearnMoreItem>
 		    		</BlockWrapper>
 	    		</LearnMore>
-
+					
 					<Footer>
 						<img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100" />
 						<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>

@@ -163,7 +163,7 @@ class Blog extends Component {
 		    		<Section>
 		    			<BlogPost>
 		    				<BlogPostColumn>
-		    					<h2>Blog Title</h2>
+								<img src="../../src/media/blog-title.png" width="350" />
 		    					<button>Learn More</button>
 		    				</BlogPostColumn>
 		    				<BlogPostColumn>
@@ -176,7 +176,7 @@ class Blog extends Component {
 		    			<SocialFeed></SocialFeed>
 		    			<SocialFeed></SocialFeed>
 		    			<SocialFeed></SocialFeed>
-		    			<button>Volunteer</button>
+						<img src="../../src/media/volunteer-title.png" width="250" />
 		    		</Aside>
 		    	</BodyWrapper>
 

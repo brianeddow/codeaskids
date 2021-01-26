@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { COLORS } from "../../css/styles";
 import styled from "styled-components";
-import ErrorBoundary from "./ErrorBoundary";
 
+import ErrorBoundary from "./ErrorBoundary";
 import About from "./About";
 import Blog from "./Blog";
 import Coding from "./Coding";

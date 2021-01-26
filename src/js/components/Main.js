@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import './styles.css';
 
 import ErrorBoundary from "./ErrorBoundary";
 import About from "./About";

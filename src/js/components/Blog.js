@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { COLORS } from "../../css/styles";
 import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
+import GlobalStyles from '../../css/styles.js';
 
 import Main from "./Main";
 import About from "./About";
@@ -33,7 +33,7 @@ const HeaderParent = styled.div`
 	width: 100%;
 	height: 400px;
 	margin: 0 auto;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const Footer = styled.div`
@@ -42,7 +42,7 @@ const Footer = styled.div`
 	justify-content: center;
 	width: 100%;
 	height: 50px;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const NavBlock = styled.div`
@@ -51,7 +51,7 @@ const NavBlock = styled.div`
 	align-items: center;
 	height: 80px;
 	width: 100%;
-	border: 1px solid red;
+	border: 0;
 `;
 
 const BodyWrapper = styled.div`
@@ -66,7 +66,7 @@ const Section = styled.div`
 	justify-content: center;
 	width: 70%;
 	height: 700px;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const Aside = styled.div`
@@ -76,7 +76,7 @@ const Aside = styled.div`
 	flex-direction: column;
 	width: 25%;
 	height: 700px;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const BlogPost = styled.div`
@@ -85,7 +85,7 @@ const BlogPost = styled.div`
 	justify-content: space-around;
 	width: 90%;
 	height: 205px;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const BlogPostColumn = styled.div`
@@ -94,7 +94,7 @@ const BlogPostColumn = styled.div`
 	justify-content: center;
 	height: 200px;
 	width: 400px;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const SocialFeed = styled.div`
@@ -105,6 +105,11 @@ const SocialFeed = styled.div`
 	margin: 20px;
 `;
 
+const Logo = styled.div`
+	height: 400px;
+	width: 400px;
+	position: absolute;
+`;
 
 class Blog extends Component {
   constructor(props) {
@@ -118,9 +123,14 @@ class Blog extends Component {
 
     		<BodyTag>
 
+    		<GlobalStyles />
+
 	    	<AboutWrapper>
 
 	    		<HeaderParent>
+	    			<Logo>
+							<img src="../../src/media/header-title.png" />
+						</Logo>
     				<NavBlock>
     					<button className="btn btn-success btn-sm">Extra</button>
     					<button className="btn btn-success btn-sm">Extra</button>

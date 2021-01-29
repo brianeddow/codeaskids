@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { COLORS } from "../../css/styles";
 import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
+import GlobalStyles from '../../css/styles.js';
 
 import Main from "./Main";
 import Blog from "./Blog";
@@ -32,7 +32,7 @@ const BlockWrapper = styled.div`
 	display: flex;
 	justify-content: space-around;
 	width: 99.9%;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const HeaderParent = styled.div`
@@ -40,7 +40,7 @@ const HeaderParent = styled.div`
 	width: 100%;
 	height: 400px;
 	margin: 0 auto;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const WelcomeIntroduction = styled.div`
@@ -50,7 +50,7 @@ const WelcomeIntroduction = styled.div`
 	width: 90vw;
 	height: 200px;
 	margin: 0 auto;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const IntroAndMission = styled.div`
@@ -60,7 +60,7 @@ const IntroAndMission = styled.div`
 	width: 90vw;
 	height: 200px;
 	margin: 0 auto;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const Faq = styled.div`
@@ -77,7 +77,7 @@ const LearnMore = styled.div`
 	margin: 0 auto;
 	height: 375px;
 	width: 90vw;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const LearnMoreItem = styled.div`
@@ -86,7 +86,7 @@ const LearnMoreItem = styled.div`
 	align-items: center;
 	width: 250px;
 	height: 250px;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const Footer = styled.div`
@@ -95,7 +95,7 @@ const Footer = styled.div`
 	justify-content: center;
 	width: 100%;
 	height: 50px;
-	border: 1px solid #000;
+	border: 0;
 `;
 
 const NavBlock = styled.div`
@@ -104,7 +104,13 @@ const NavBlock = styled.div`
 	align-items: center;
 	height: 80px;
 	width: 100%;
-	border: 1px solid red;
+	border: 0;
+`;
+
+const Logo = styled.div`
+	height: 400px;
+	width: 400px;
+	position: absolute;
 `;
 
 
@@ -120,9 +126,14 @@ class About extends Component {
 
     		<BodyTag>
 
+    		<GlobalStyles />
+
 	    	<AboutWrapper>
 
 	    		<HeaderParent>
+	    			<Logo>
+							<img src="../../src/media/header-title.png" />
+						</Logo>
     				<NavBlock>
     					<button className="btn btn-success btn-sm">Extra</button>
     					<button className="btn btn-success btn-sm">Extra</button>

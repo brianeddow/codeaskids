@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import './styles.css';
+import GlobalStyles from '../../css/styles.js';
 
 import ErrorBoundary from "./ErrorBoundary";
 import About from "./About";
@@ -15,6 +15,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
 
 const BodyTag = styled.div`
 	position: absolute;
@@ -101,7 +102,7 @@ const FooterWrapper = styled.div`
 
   border: 10px solid;
   border-image-slice: 1;
-  border-width: 7px;
+  border-width: 6px;
   border-image-source: linear-gradient(to bottom, yellow, green);
 `;
 
@@ -140,6 +141,8 @@ class Home extends Component {
     	<ErrorBoundary>
 
     	<BodyTag>
+
+    		<GlobalStyles />
 
 	    	<AppWrapper>
 
@@ -241,7 +244,7 @@ class Home extends Component {
 					<FooterWrapper className="row">
 					 <Footer className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 					    <img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100"/>
-						<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
+							<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
 							<p>Copyright 2021 Code as Kids, All Rights Reserved <i>Version 1.0</i></p>
 							
 		    		</Footer>

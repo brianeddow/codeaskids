@@ -143,12 +143,20 @@ class Coding extends Component {
 				    		</Switch>
 				    	</Router>
     				</NavBlock>
-	    		</HeaderParent>
+					</HeaderParent>
+
+
+					<WelcomeIntroduction className="row">
+						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<img src="../../src/media/coding-title.png" width="650" />
+							<p className="introduction-text">Here is a set of blog post we have created related to code, technology, school, science and more!</p>
+						</div>
+					</WelcomeIntroduction>
 
 
 	    		<BodyWrapper>
 	    			<BlockSection>
-					    <img src="../../src/media/html-title.png" width="350" />
+					    <img src="../../src/media/html-title.png" width="250" />
 		    		</BlockSection>
 		    		<BlockSection>
 						<img src="../../src/media/code-examples-title.png" width="250" />

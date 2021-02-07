@@ -38,11 +38,22 @@ const HeaderParent = styled.div`
 `;
 
 const WelcomeIntroduction = styled.div`
-  width: 100%;
-  height: 300px;
-  margin: 0 auto;
-  border: 0;
-  text-align: center;
+    height: 300px;
+    margin: 0 auto;
+    border: 0;
+    text-align: center;
+    text-align: center;
+    width: 900px;
+    margin: 2em;
+    padding: 7em 10em 7em 10em;
+    border: 0;
+    background: url(../../src/media/jungle-textbox.png);
+    /* margin-left: auto; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
 `;
 
 const IntroAndMission = styled.div`
@@ -56,27 +67,25 @@ const IntroAndMission = styled.div`
 `;
 
 const IntroVideo = styled.div`
-	text-align: center;
-  width: 900px;
-  margin: 2em;
-  height: 300px;
-padding-top: 6em;
-	border: 0;
-	background: url('../../src/media/jungle-textbox.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    text-align: center;
+    width: 900px;
+    margin: 2em;
+    padding: 7em 10em 7em 10em;
+    border: 0;
+    background: url(../../src/media/jungle-textbox.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 `;
 
 const Mission = styled.div`
-  text-align: center;
-  width: 900px;
-  margin: 2em;
-  height: 300px;
-  padding-top: 6em;
-	border: 0;
-	background: url('../../src/media/jungle-textbox.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    text-align: center;
+    width: 900px;
+    margin: 2em;
+    padding: 7em 10em 7em 10em;
+    border: 0;
+    background: url(../../src/media/jungle-textbox.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 `;
 
 const Timeline = styled.div`

@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\css",
     "\\src\\js",
     "\\src\\js\\actions",
     "\\src\\js\\components",
     "\\src\\media"
   ],
-  "SelectedNode": "\\src\\js\\components\\App.js",
+  "SelectedNode": "\\src\\css\\styles.js",
   "PreviewInSolutionExplorer": false
 }

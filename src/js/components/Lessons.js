@@ -148,10 +148,10 @@ class Lessons extends Component {
 
 	    		<BodyWrapper>
 	    			<BlockSection>
-							<img src="../../src/media/lesson-summary-title.png" width="350" />
+							<img src="../../src/media/summary-title.png" width="350" />
 		    		</BlockSection>
 		    		<BlockSection>
-							<img src="../../src/media/code-examples-title.png" width="250" />
+							<img src="../../src/media/code-example-title.png" width="250" />
 		    		</BlockSection>
 		    		<BlockSection>
 							<img src="../../src/media/quizzes-title.png" width="250" />

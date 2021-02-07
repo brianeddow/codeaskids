@@ -168,6 +168,12 @@ class Blog extends Component {
     				</NavBlock>
 	    		</HeaderParent>
 
+				<WelcomeIntroduction className="row">
+					<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<img src="../../src/media/blog-title.png" width="650" />
+						<p className="introduction-text">Here is a set of blog post we have created related to code, technology, school, science and more!</p>
+					</div>
+				</WelcomeIntroduction>
 
 	    		<BodyWrapper>
 		    		<Section>

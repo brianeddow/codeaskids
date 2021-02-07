@@ -44,13 +44,11 @@ const HeaderParent = styled.div`
 `;
 
 const WelcomeIntroduction = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 90vw;
-	height: 200px;
-	margin: 0 auto;
-	border: 0;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border: 0;
+  text-align: center;
 `;
 
 const IntroAndMission = styled.div`
@@ -173,7 +171,7 @@ class About extends Component {
 
 				<WelcomeIntroduction className="row">
 				 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-					<img src="../../src/media/about-us-title.png" width="350" />
+					<img src="../../src/media/about-us-title.png" width="650" />
 					<p className="introduction-text">Code for Kids is a new website for kids ranging from 3<sup>rd</sup> to 12<sup>th</sup>grade curious about creating with code. Our website contains coding quizzes, blogs, templates, lessons. Code for Kids hopes to be the coding community of tomorrow. We look forward to growing with you and giving you as a user the experience you all deserve.  </p>
 	    		 </div>
 				</WelcomeIntroduction>
@@ -181,7 +179,7 @@ class About extends Component {
 					<IntroAndMission className="row">
 						<Faq>
 						 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-							<img src="../../src/media/faq-title.png" width="250" />
+							<img src="../../src/media/faq-title.png" width="650" />
 
 							<a href="#question-one" className="btn btn-info" data-toggle="collapse">When was this website created?</a>
 							<div id="question-one" className="collapse">
@@ -232,8 +230,8 @@ class About extends Component {
 	    			</Faq>
 	    		</IntroAndMission>
 
-	    		<LearnMore>
-	    			<BlockWrapper>
+				<LearnMore>
+					<BlockWrapper>
 	    				<p>Learn More</p>
 	    			</BlockWrapper>
 	    			<BlockWrapper>

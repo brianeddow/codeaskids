@@ -458,8 +458,27 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+ .btn-lg{
+    background: url(../../src/media/button-background-1.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: none;
+    margin: 0em 0.5em 0em 0em;
+    width: 150px;
+    height: 50px;
+}
 
-
+ .btn-sm{
+    background: url(../../src/media/button-background-1.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: none;
+    margin: 0em 0.5em 0em 0em;
+    width: 50px;
+    height: 50px;
+}
 
 /*--------------------------------------------------------------
 # Home
@@ -479,7 +498,6 @@ textarea {
     padding: 10px 20px 10px 20px;
     margin: 20px 20px 20px 0px;
  }
-
 
 /*--------------------------------------------------------------
 # Home

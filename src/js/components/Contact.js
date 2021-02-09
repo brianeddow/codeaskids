@@ -146,17 +146,37 @@ class Contact extends Component {
     				</NavBlock>
 	    		</HeaderParent>
 
+					<WelcomeIntroduction className="row">
+						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<img src="../../src/media/about-us-title.png" width="650" />
+							<p className="introduction-text">Feel free to contact us about suggestions, advertisement offers, volunteering and questions.
+							Volunteers can contribute by writing articles, creating graphic designs and much more. Let us know how you’d like to contribute
+							to helping kids and adults learn code the right way. All content will be reviewed by website administrators prior to posting.</p>
+						</div>
+					</WelcomeIntroduction>
 
-	    		<BodyWrapper>
-	    			<BlockSection>
-	    				<ContactBlockTop>
-	    				</ContactBlockTop>
-	    				<Column>
-	    				</Column>
-	    				<Column>
-	    				</Column>
-		    		</BlockSection>
-		    	</BodyWrapper>
+
+					<LearnMore>
+						<BlockWrapper>
+							<p>Learn More</p>
+						</BlockWrapper>
+						<BlockWrapper>
+							<LearnMoreItem>Lessons CTA</LearnMoreItem>
+							<LearnMoreItem>Coding CTA</LearnMoreItem>
+							<LearnMoreItem>Blog CTA</LearnMoreItem>
+						</BlockWrapper>
+					</LearnMore>
+
+					<LearnMore>
+						<BlockWrapper>
+							<p>Social Media</p>
+						</BlockWrapper>
+						<BlockWrapper>
+							<LearnMoreItem>Facebook CTA</LearnMoreItem>
+							<LearnMoreItem>Instagram CTA</LearnMoreItem>
+							<LearnMoreItem>Twitter CTA</LearnMoreItem>
+						</BlockWrapper>
+					</LearnMore>
 
 	    	</AboutWrapper>
 

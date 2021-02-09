@@ -230,27 +230,26 @@ class About extends Component {
 	    			</Faq>
 	    		</IntroAndMission>
 
-				<LearnMore>
-					<BlockWrapper>
-	    				<p>Learn More</p>
-	    			</BlockWrapper>
-	    			<BlockWrapper>
-		    			<LearnMoreItem>Lessons CTA</LearnMoreItem>
-		    			<LearnMoreItem>Coding CTA</LearnMoreItem>
-		    			<LearnMoreItem>Blog CTA</LearnMoreItem>
-		    		</BlockWrapper>
-	    		</LearnMore>
 
-	    		<LearnMore>
-	    			<BlockWrapper>
-	    				<p>Social Media</p>
-	    			</BlockWrapper>
-	    			<BlockWrapper>
-		    			<LearnMoreItem>Facebook CTA</LearnMoreItem>
-		    			<LearnMoreItem>Instagram CTA</LearnMoreItem>
-		    			<LearnMoreItem>Twitter CTA</LearnMoreItem>
-		    		</BlockWrapper>
-	    		</LearnMore>
+					<LearnMore>
+						<BlockWrapper>
+							<img src="../../src/social-media-title.png" width="350" />
+						</BlockWrapper>
+						<BlockWrapper>
+							<LearnMoreItem>
+								<img src="../../src/facebook-title.png" width="250" />
+								<p>Give us a follow on Facebook!</p>
+							</LearnMoreItem>
+							<LearnMoreItem>
+								<img src="../../src/instagram-title.png" width="250" />
+								<p>Give us a follow on Instagram!</p>
+							</LearnMoreItem>
+							<LearnMoreItem>
+								<img src="../../src/twitter-title.png" width="250" />
+								<p>Give us a follow on Twitter!</p>
+							</LearnMoreItem>
+						</BlockWrapper>
+					</LearnMore>
 
 	    	</AboutWrapper>
 

@@ -158,6 +158,7 @@ class Contact extends Component {
 
 					<LearnMore>
 						<BlockWrapper>
+							<img src="../../src/learn-more-title.png" width="350" />
 							<p>Learn More</p>
 						</BlockWrapper>
 						<BlockWrapper>
@@ -169,12 +170,21 @@ class Contact extends Component {
 
 					<LearnMore>
 						<BlockWrapper>
-							<p>Social Media</p>
+							<img src="../../src/social-media-title.png" width="350" />
 						</BlockWrapper>
 						<BlockWrapper>
-							<LearnMoreItem>Facebook CTA</LearnMoreItem>
-							<LearnMoreItem>Instagram CTA</LearnMoreItem>
-							<LearnMoreItem>Twitter CTA</LearnMoreItem>
+							<LearnMoreItem>
+								<img src="../../src/facebook-title.png" width="250" />
+								<p>Give us a follow on Facebook!</p>
+							</LearnMoreItem>
+							<LearnMoreItem>
+								<img src="../../src/instagram-title.png" width="250" />
+								<p>Give us a follow on Instagram!</p>
+							</LearnMoreItem>
+							<LearnMoreItem>
+								<img src="../../src/twitter-title.png" width="250" />
+								<p>Give us a follow on Twitter!</p>
+							</LearnMoreItem>
 						</BlockWrapper>
 					</LearnMore>
 

@@ -19,7 +19,7 @@ import {
 const BodyTag = styled.div`
 	position: absolute;
 	left: 0; top: 0;
-	right: 0; bottom;
+	right: 0; bottom: auto;
 `;
 
 const AboutWrapper = styled.div`
@@ -130,63 +130,49 @@ class Contact extends Component {
 		    				<Link to="/lessons">
 		    					<button className="btn btn-success btn-lg">Lessons</button>
 		    				</Link>
-		    				<Link to="/contact">
+
 		    					<button className="btn btn-success btn-lg">Contact</button>
-		    				</Link>
+
 
 				    		<Switch>
-				    			<Route exact path="/"><Main /></Route>
-				    			<Route path="/about"><About /></Route>
-				    			<Route path="/blog"><Blog /></Route>
-				    			<Route path="/coding"><Coding /></Route>
-				    			<Route path="/lessons"><Lessons /></Route>
-				    			<Route path="#"></Route>
+				    			<Route exact path="/" component={Main} />
+				    			<Route exact path="/about" component={About} />
+				    			<Route exact path="/blog" component={Blog} />
+				    			<Route exact path="/coding" component={Coding} />
+				    			<Route exact path="/lessons" component={Lessons} />
 				    		</Switch>
 				    	</Router>
     				</NavBlock>
 	    		</HeaderParent>
 
-					<WelcomeIntroduction className="row">
+					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 							<img src="../../src/media/about-us-title.png" width="650" />
 							<p className="introduction-text">Feel free to contact us about suggestions, advertisement offers, volunteering and questions.
 							Volunteers can contribute by writing articles, creating graphic designs and much more. Let us know how you’d like to contribute
 							to helping kids and adults learn code the right way. All content will be reviewed by website administrators prior to posting.</p>
 						</div>
-					</WelcomeIntroduction>
+					</div>
 
+					<img src="../../src/learn-more-title.png" width="350" />
+					<p>Learn More</p>
+					<p>Lessons CTA</p>
+					<p>Coding CTA</p>
+					<p>Blog CTA</p>
 
-					<LearnMore>
-						<BlockWrapper>
-							<img src="../../src/learn-more-title.png" width="350" />
-							<p>Learn More</p>
-						</BlockWrapper>
-						<BlockWrapper>
-							<LearnMoreItem>Lessons CTA</LearnMoreItem>
-							<LearnMoreItem>Coding CTA</LearnMoreItem>
-							<LearnMoreItem>Blog CTA</LearnMoreItem>
-						</BlockWrapper>
-					</LearnMore>
-
-					<LearnMore>
-						<BlockWrapper>
-							<img src="../../src/social-media-title.png" width="350" />
-						</BlockWrapper>
-						<BlockWrapper>
-							<LearnMoreItem>
-								<img src="../../src/facebook-title.png" width="250" />
-								<p>Give us a follow on Facebook!</p>
-							</LearnMoreItem>
-							<LearnMoreItem>
-								<img src="../../src/instagram-title.png" width="250" />
-								<p>Give us a follow on Instagram!</p>
-							</LearnMoreItem>
-							<LearnMoreItem>
-								<img src="../../src/twitter-title.png" width="250" />
-								<p>Give us a follow on Twitter!</p>
-							</LearnMoreItem>
-						</BlockWrapper>
-					</LearnMore>
+					<img src="../../src/social-media-title.png" width="350" />
+				
+					<img src="../../src/facebook-title.png" width="250" />
+					<p>Give us a follow on Facebook!</p>
+				
+			
+					<img src="../../src/instagram-title.png" width="250" />
+					<p>Give us a follow on Instagram!</p>
+				
+			
+					<img src="../../src/twitter-title.png" width="250" />
+					<p>Give us a follow on Twitter!</p>
+					
 
 	    	</AboutWrapper>
 

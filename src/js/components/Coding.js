@@ -19,7 +19,7 @@ import {
 const BodyTag = styled.div`
 	position: absolute;
 	left: 0; top: 0;
-	right: 0; bottom;
+	right: 0; bottom: auto;
 `;
 
 const AboutWrapper = styled.div`
@@ -123,9 +123,9 @@ class Coding extends Component {
 		    				<Link to="/blog">
 		    					<button className="btn btn-success btn-lg">Blog</button>
 		    				</Link>
-		    				<Link to="/coding">
+
 		    					<button className="btn btn-success btn-lg">Coding</button>
-		    				</Link>
+
 		    				<Link to="/lessons">
 		    					<button className="btn btn-success btn-lg">Lessons</button>
 		    				</Link>
@@ -134,24 +134,23 @@ class Coding extends Component {
 		    				</Link>
 
 				    		<Switch>
-				    			<Route exact path="/"><Main /></Route>
-				    			<Route path="/about"><About /></Route>
-				    			<Route path="/blog"><Blog /></Route>
-				    			<Route path="#"></Route>
-				    			<Route path="/lessons"><Lessons /></Route>
-				    			<Route path="/contact"><Contact /></Route>
+				    			<Route exact path="/" component={Main} />
+				    			<Route exact path="/about" compoent={About} />
+				    			<Route exact path="/blog" component={Blog} />
+				    			<Route exact path="/lessons" component={Lessons} />
+				    			<Route exact path="/contact" component={Contact} />
 				    		</Switch>
 				    	</Router>
     				</NavBlock>
 					</HeaderParent>
 
 
-					<WelcomeIntroduction className="row">
+					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 							<img src="../../src/media/coding-title.png" width="650" />
 							<p className="introduction-text">Here is a set of blog post we have created related to code, technology, school, science and more!</p>
 						</div>
-					</WelcomeIntroduction>
+					</div>
 
 
 	    		<BodyWrapper>

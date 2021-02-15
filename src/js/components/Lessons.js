@@ -19,7 +19,7 @@ import {
 const BodyTag = styled.div`
 	position: absolute;
 	left: 0; top: 0;
-	right: 0; bottom;
+	right: 0; bottom: auto;
 `;
 
 const AboutWrapper = styled.div`
@@ -126,20 +126,19 @@ class Lessons extends Component {
 		    				<Link to="/coding">
 		    					<button className="btn btn-success btn-lg">Coding</button>
 		    				</Link>
-		    				<Link to="/lessons">
+
 		    					<button className="btn btn-success btn-lg">Lessons</button>
-		    				</Link>
+
 		    				<Link to="/contact">
 		    					<button className="btn btn-success btn-lg">Contact</button>
 		    				</Link>
 
 				    		<Switch>
-				    			<Route exact path="/"><Main /></Route>
-				    			<Route path="/about"><About /></Route>
-				    			<Route path="/blog"><Blog /></Route>
-				    			<Route path="/coding"><Coding /></Route>
-				    			<Route path="#"></Route>
-				    			<Route path="/contact"><Contact /></Route>
+				    			<Route exact path="/" component={Main} />
+				    			<Route exact path="/about" component={About} />
+				    			<Route exact path="/blog" component={Blog} />
+				    			<Route exact path="/coding" component={Coding} />
+				    			<Route exact path="/contact" component={Contact} />
 				    		</Switch>
 				    	</Router>
     				</NavBlock>

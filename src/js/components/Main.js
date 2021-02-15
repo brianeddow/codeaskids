@@ -20,7 +20,7 @@ import {
 const BodyTag = styled.div`
 	position: absolute;
 	left: 0; top: 0;
-	right: 0; bottom;
+	right: 0; bottom: auto;
 `;
 
 const AppWrapper = styled.div`
@@ -38,22 +38,20 @@ const HeaderParent = styled.div`
 `;
 
 const WelcomeIntroduction = styled.div`
-    height: 300px;
-    margin: 0 auto;
-    border: 0;
-    text-align: center;
-    text-align: center;
-    width: 900px;
-    margin: 2em;
-    padding: 7em 10em 7em 10em;
-    border: 0;
-    background: url(../../src/media/jungle-textbox.png);
-    /* margin-left: auto; */
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-right: auto;
-    margin-left: auto;
-    display: table;
+  height: 300px;
+  margin: 0 auto;
+  border: 0;
+  text-align: center;
+  width: 900px;
+  margin: 2em;
+  padding: 7em 10em 7em 10em;
+  border: 0;
+  background: url(../../src/media/jungle-textbox.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
 `;
 
 const IntroAndMission = styled.div`
@@ -165,9 +163,9 @@ class Home extends Component {
     				</NavBlock>
     				<NavBlock>
     					<Router>
-	  						<Link to="#">
+
 		    					<button className="btn btn-success btn-lg">Home</button>
-		    				</Link>
+
 		    				<Link to="/about">
 		    					<button className="btn btn-success btn-lg">About</button>
 		    				</Link>
@@ -185,12 +183,11 @@ class Home extends Component {
 		    				</Link>
 
 				    		<Switch>
-				    			<Route exact path="/"></Route>
-				    			<Route path="/about"><About /></Route>
-				    			<Route path="/blog"><Blog /></Route>
-				    			<Route path="/coding"><Coding /></Route>
-				    			<Route path="/lessons"><Lessons /></Route>
-				    			<Route path="/contact"><Contact /></Route>
+				    			<Route exact path="/about" component={About} />
+				    			<Route exact path="/blog" component={Blog} />
+				    			<Route exact path="/coding" component={Coding} />
+				    			<Route exact path="/lessons" component={Lessons} />
+				    			<Route exact path="/contact" component={Contact} />
 				    		</Switch>
 				    	</Router>
     				</NavBlock>

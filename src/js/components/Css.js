@@ -16,97 +16,6 @@ import {
   Link
 } from "react-router-dom";
 
-const BodyTag = styled.div`
-	position: absolute;
-	left: 0; top: 0;
-	right: 0; bottom;
-`;
-
-const AboutWrapper = styled.div`
-	margin: 0 auto;
-	background: url('../../src/media/code-as-kids-medium-desktop-background.png');
-	background-size: cover;
-`;
-
-const BlockWrapper = styled.div`
-	display: flex;
-	justify-content: space-around;
-	width: 99.9%;
-	border: 1px solid #000;
-`;
-
-const HeaderParent = styled.div`
-	display: block;
-	width: 100%;
-	height: 400px;
-	margin: 0 auto;
-	border: 1px solid #000;
-`;
-
-const Summary = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 90vw;
-	height: 200px;
-	margin: 0 auto;
-	border: 1px solid #000;
-`;
-
-const History = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 90vw;
-	height: 200px;
-	margin: 0 auto;
-	border: 1px solid #000;
-`;
-
-const Faq = styled.div`
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	height: 4em;
-	border: 1px solid #000;
-	background-color: #eee;
-`;
-
-const LearnMore = styled.div`
-	display: block;
-	margin: 0 auto;
-	height: 375px;
-	width: 90vw;
-	border: 1px solid #000;
-`;
-
-const LearnMoreItem = styled.div`
-	display: inline-flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 250px;
-	height: 250px;
-	border: 1px solid #000;
-`;
-
-const Footer = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 50px;
-	border: 1px solid #000;
-`;
-
-const NavBlock = styled.div`
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 80px;
-	width: 100%;
-	border: 1px solid red;
-`;
-
 
 class Css extends Component {
   constructor(props) {
@@ -124,8 +33,8 @@ class Css extends Component {
 
 	    		<HeaderParent>
     				<NavBlock>
-    					<button className="btn btn-success btn-sm">Extra</button>
-    					<button className="btn btn-success btn-sm">Extra</button>
+							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-instagram fa-3x"></i></button></a>
+							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-twitter fa-3x"></i></button></a>
     				</NavBlock>
     				<NavBlock>
     					<Router>

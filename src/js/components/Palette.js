@@ -3,22 +3,6 @@ import { COLORS } from "../../css/styles";
 import styled from "styled-components";
 import { ErrorBoundary } from "./ErrorBoundary";
 
-const Colorways = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 30px;
-`;
-
-const Block = styled.div`
-	display: inline-block;
-	width: 60px;
-	height: 500px;
-	margin: 0 auto;
-	border: 1px solid #000;
-	background-color: ${props => props.color};
-	filter: drop-shadow(10px 10px 4px #aaa);
-`;
 
 class Palette extends Component {
   constructor(props) {

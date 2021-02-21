@@ -459,25 +459,65 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
  .btn-lg{
-    background: url(../../src/media/button-background-1.png) !important;
+    background: url(../../src/media/button-background-main-navbar.png);
     background-size: contain;
     background-repeat: no-repeat;
     box-shadow: none;
     border: none;
     margin: 0em 0.5em 0em 0em;
     width: 150px;
-    height: 50px;
+    height: 55px;
+}
+
+.btn-success:hover {
+    background: url(../../src/media/button-background-main-navbar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: none;
+    margin: 0em 0.5em 0em 0em;
+    width: 150px;
+    height: 55px;
 }
 
  .btn-sm{
-    background: url(../../src/media/button-background-1.png) !important;
+    background: url(../../src/media/button-background-main-navbar.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: none;
     border: none;
     margin: 0em 0.5em 0em 0em;
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 55px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+ .footer-content{
+    background: url(../../src/media/footer-wood-textarea.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    width: 650px;
+    height: 355px;
+}
+
+.footer-content p{
+  color: white;
+    font-size: 1.15em;
+}
+
+.footer-content a{
+  color: white;
+   font-size: 1.15em;
+}
+
+.footer-logo{
+    margin-top: 5.5em;
+    margin-bottom: 1em;
 }
 
 /*--------------------------------------------------------------

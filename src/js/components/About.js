@@ -133,8 +133,8 @@ class About extends Component {
 							<img src="../../src/media/header-title.png" />
 						</Logo>
     				<NavBlock>
-    					<button className="btn btn-success btn-sm">Extra</button>
-    					<button className="btn btn-success btn-sm">Extra</button>
+							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-instagram fa-3x"></i></button></a>
+							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-twitter fa-3x"></i></button></a>
     				</NavBlock>
     				<NavBlock>
     					<Router>

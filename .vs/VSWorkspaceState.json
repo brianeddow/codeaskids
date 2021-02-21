@@ -6,8 +6,9 @@
     "\\src\\js",
     "\\src\\js\\actions",
     "\\src\\js\\components",
+    "\\src\\js\\constants",
     "\\src\\media"
   ],
-  "SelectedNode": "\\src\\css\\styles.js",
+  "SelectedNode": "\\src\\media\\footer-wood-textarea.png",
   "PreviewInSolutionExplorer": false
 }

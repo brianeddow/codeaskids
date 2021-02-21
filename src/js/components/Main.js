@@ -103,14 +103,8 @@ const Timeline = styled.div`
 `;
 
 const FooterWrapper = styled.div`
-	background: #fff;
   padding: 10px;
 	opacity: 0.7;
-
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 6px;
-  border-image-source: linear-gradient(to bottom, yellow, green);
 `;
 
 const Footer = styled.div`
@@ -158,8 +152,8 @@ class Home extends Component {
 							<img src="../../src/media/header-title.png" />
 						</Logo>
     				<NavBlock>
-    					<button className="btn btn-success btn-sm">Extra</button>
-    					<button className="btn btn-success btn-sm">Extra</button>
+							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-instagram fa-3x"></i></button></a>
+							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-twitter fa-3x"></i></button></a>
     				</NavBlock>
     				<NavBlock>
     					<Router>
@@ -248,11 +242,12 @@ class Home extends Component {
 	    		</Timeline>
 
 					<FooterWrapper className="row">
-					 <Footer className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-					    <img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100"/>
+						<Footer className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">\
+						<div className="footer-content">
+					     <img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100"/>
 							<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
 							<p>Copyright 2021 Code as Kids, All Rights Reserved <i>Version 1.0</i></p>
-							
+						</div>	
 		    		</Footer>
 		    	</FooterWrapper>
 

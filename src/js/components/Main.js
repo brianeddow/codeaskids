@@ -25,7 +25,7 @@ const BodyTag = styled.div`
 
 const AppWrapper = styled.div`
 	margin: 0 auto;
-	background: url('../../src/media/code-as-kids-medium-desktop-background.png');
+	background: url('../../src/media/code-as-kids-medium-desktop-background.gif');
 	background-size: cover;
 `;
 

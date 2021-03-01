@@ -250,7 +250,7 @@ h6 {
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.15em;
+    font-size: 1.5em;
     font-weight: 600;
 	margin-bottom: 1.5em;
 }

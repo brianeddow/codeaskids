@@ -460,7 +460,7 @@ textarea {
 /*--------------------------------------------------------------
 # Effects
 --------------------------------------------------------------*/
-
+/* Shake */
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -475,6 +475,16 @@ textarea {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/* Hang */
+@keyframes hang {
+	50% {
+		transform: translateY(3px);
+	}
+
+	100% {
+		transform: translateY(6px);
+	}
+}
 
 /*--------------------------------------------------------------
 # Navigation
@@ -507,14 +517,44 @@ textarea {
 }
 
  .btn-sm{
-    background: url(../../src/media/button-background-main-navbar.png) !important;
+   background: url(../../src/media/small-banana-background.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: none;
     border: none;
     margin: 0em 0.5em 0em 0em;
     width: 150px;
-    height: 55px;
+    height: 169px;
+    transform: rotate(25deg) translateX(0px);
+
+}
+
+.btn-sm:hover{
+    background: url(../../src/media/small-banana-background.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: none;
+    margin: 0em 0.5em 0em 0em;
+    width: 150px;
+    height: 169px;
+    transform: rotate(15deg) translateX(0px);
+    transform: rotate(15deg) translateX(0px);
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: hang 1.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.fa-instagram{
+ color: #573F26;
+ margin-left: 1em;
+}
+
+.fa-twitter{
+ color: #573F26;
+  margin-left: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -564,26 +604,45 @@ textarea {
      margin: 0 0 1.5em -1em;
   }
 
- .btn-info {
-    color: #fff;
-    background-color: #5bc0de;
-    border-color: #46b8da;
-    width: 100%;
-    font-size: 1.25em;
-    font-weight: 800;
-    padding: 10px 20px 10px 20px;
-    margin: 20px 20px 20px 0px;
- }
-
-/*--------------------------------------------------------------
-# Home
---------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.btn-info {
+    color: #fff;
+    text-align: left;
+    background: url(../../src/media/log-background.png);
+    background-size: revert;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    border-color: transparent;
+    width: 1666px;
+    height: 208px;
+    font-size: 3.25em;
+    font-weight: 800;
+    padding: 2em 1em 1em 5em;
+    margin: 1em 1em 1em 1em;
+}
 
+btn-info:hover {
+    color: #fff;
+    text-align: left;
+    background: url(../../src/media/log-background.png);
+    background-size: revert;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    border-color: transparent;
+    width: 1666px;
+    height: 208px;
+    font-size: 3.25em;
+    font-weight: 800;
+    padding: 2em 1em 1em 5em;
+    margin: 1em 1em 1em 1em;
+}
 
 /*--------------------------------------------------------------
 # Blog

@@ -3,18 +3,8 @@ import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
 import GlobalStyles from '../../css/styles.js';
 
-import Main from "./Main";
-import About from "./About";
-import Coding from "./Coding";
-import Lessons from "./Lessons";
-import Contact from "./Contact";
+import { Link } from "react-router-dom";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 const BodyTag = styled.div`
 	position: absolute;
@@ -132,38 +122,28 @@ class Blog extends Component {
 							<img src="../../src/media/header-title.png" />
 						</Logo>
     				<NavBlock>
-							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-instagram fa-3x"></i></button></a>
-							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-twitter fa-3x"></i></button></a>
+							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i className="fab fa-instagram fa-3x"></i></button></a>
+							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i className="fab fa-twitter fa-3x"></i></button></a>
     				</NavBlock>
     				<NavBlock>
-    					<Router>
-	  						<Link to="/">
-		    					<button className="btn btn-success btn-lg">Home</button>
-		    				</Link>
-		    				<Link to="/about">
-		    					<button className="btn btn-success btn-lg">About</button>
-		    				</Link>
-
-		    					<button className="btn btn-success btn-lg">Blog</button>
-		    					
-		    				<Link to="/coding">
-		    					<button className="btn btn-success btn-lg">Coding</button>
-		    				</Link>
-		    				<Link to="/lessons">
-		    					<button className="btn btn-success btn-lg">Lessons</button>
-		    				</Link>
-		    				<Link to="/contact">
-		    					<button className="btn btn-success btn-lg">Contact</button>
-		    				</Link>
-
-				    		<Switch>
-				    			<Route exact path="/" component={Main} />
-				    			<Route exact path="/about" component={About} />
-				    			<Route exact path="/coding" component={Coding} />
-				    			<Route exact path="/lessons" component={Lessons} />
-				    			<Route exact path="/contact" component={Contact} />
-				    		</Switch>
-				    	</Router>
+  						<Link to="/">
+	    					<button className="btn btn-success btn-lg">Home</button>
+	    				</Link>
+	    				<Link to="/about">
+	    					<button className="btn btn-success btn-lg">About</button>
+	    				</Link>
+	    				<Link to="/blog">
+	    					<button className="btn btn-success btn-lg">Blog</button>
+	    				</Link>
+	    				<Link to="/coding">
+	    					<button className="btn btn-success btn-lg">Coding</button>
+	    				</Link>
+	    				<Link to="/lessons">
+	    					<button className="btn btn-success btn-lg">Lessons</button>
+	    				</Link>
+	    				<Link to="/contact">
+	    					<button className="btn btn-success btn-lg">Contact</button>
+	    				</Link>
     				</NavBlock>
 	    		</HeaderParent>
 

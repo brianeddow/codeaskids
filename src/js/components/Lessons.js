@@ -3,19 +3,51 @@ import styled from "styled-components";
 import ErrorBoundary from "./ErrorBoundary";
 import GlobalStyles from '../../css/styles.js';
 
-import Main from "./Main";
-import About from "./About";
-import Blog from "./Blog";
-import Coding from "./Coding";
-import Contact from "./Contact";
+import { Link } from "react-router-dom";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
+const BodyTag = styled.div`
+	position: absolute;
+	left: 0; top: 0;
+	right: 0; bottom: auto;
+`;
+
+const AboutWrapper = styled.div`
+	margin: 0 auto;
+	background: url('../../src/media/code-as-kids-medium-desktop-background.gif');
+	background-size: cover;
+`;
+
+const HeaderParent = styled.div`
+	display: block;
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	border: 0;
+`;
+
+const Logo = styled.div`
+	height: 400px;
+	width: 400px;
+	position: absolute;
+`;
+
+const NavBlock = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+	border: 0;
+`;
+
+const BlockSection = styled.div`
+
+`;
+
+const Subject = styled.div`
+
+`;
 
 class Lessons extends Component {
   constructor(props) {
@@ -42,39 +74,27 @@ class Lessons extends Component {
     					<button className="btn btn-success btn-sm">Extra</button>
     				</NavBlock>
     				<NavBlock>
-    					<Router>
-	  						<Link to="/">
-		    					<button className="btn btn-success btn-lg">Home</button>
-		    				</Link>
-		    				<Link to="/about">
-		    					<button className="btn btn-success btn-lg">About</button>
-		    				</Link>
-		    				<Link to="/blog">
-		    					<button className="btn btn-success btn-lg">Blog</button>
-		    				</Link>
-		    				<Link to="/coding">
-		    					<button className="btn btn-success btn-lg">Coding</button>
-		    				</Link>
-
-		    					<button className="btn btn-success btn-lg">Lessons</button>
-
-		    				<Link to="/contact">
-		    					<button className="btn btn-success btn-lg">Contact</button>
-		    				</Link>
-
-				    		<Switch>
-				    			<Route exact path="/" component={Main} />
-				    			<Route exact path="/about" component={About} />
-				    			<Route exact path="/blog" component={Blog} />
-				    			<Route exact path="/coding" component={Coding} />
-				    			<Route exact path="/contact" component={Contact} />
-				    		</Switch>
-				    	</Router>
+  						<Link to="/">
+	    					<button className="btn btn-success btn-lg">Home</button>
+	    				</Link>
+	    				<Link to="/about">
+	    					<button className="btn btn-success btn-lg">About</button>
+	    				</Link>
+	    				<Link to="/blog">
+	    					<button className="btn btn-success btn-lg">Blog</button>
+	    				</Link>
+	    				<Link to="/coding">
+	    					<button className="btn btn-success btn-lg">Coding</button>
+	    				</Link>
+	    				<Link to="/lessons">
+	    					<button className="btn btn-success btn-lg">Lessons</button>
+	    				</Link>
+	    				<Link to="/contact">
+	    					<button className="btn btn-success btn-lg">Contact</button>
+	    				</Link>
     				</NavBlock>
 	    		</HeaderParent>
 
-
-	    		<BodyWrapper>
 	    			<BlockSection>
 							<img src="../../src/media/summary-title.png" width="350" />
 		    		</BlockSection>
@@ -92,7 +112,6 @@ class Lessons extends Component {
 		    			<Subject />
 		    			<Subject />
 		    		</BlockSection>
-				</BodyWrapper>
 
 	    	</AboutWrapper>
 

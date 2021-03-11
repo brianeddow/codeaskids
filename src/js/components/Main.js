@@ -35,7 +35,7 @@ const WelcomeIntroduction = styled.div`
   margin: 2em;
   padding: 7em 10em 7em 10em;
   border: 0;
-  background: url(../../src/media/jungle-textbox.png);
+  background: url(../../src/media/jungle-textbox-v2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-right: auto;
@@ -59,7 +59,7 @@ const IntroVideo = styled.div`
     margin: 2em;
     padding: 7em 10em 7em 10em;
     border: 0;
-    background: url(../../src/media/jungle-textbox.png);
+    background: url(../../src/media/jungle-textbox-v2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 `;
@@ -70,7 +70,7 @@ const Mission = styled.div`
     margin: 2em;
     padding: 7em 10em 7em 10em;
     border: 0;
-    background: url(../../src/media/jungle-textbox.png);
+    background: url(../../src/media/jungle-textbox-v2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 `;
@@ -86,7 +86,7 @@ const Timeline = styled.div`
   padding-top: 6em;
   padding-bottom: 6em;
   border: 0;
-  background: url(../../src/media/jungle-textbox.png);
+  background: url(../../src/media/jungle-textbox-v2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 `;

@@ -35,13 +35,25 @@ const Footer = styled.div`
 	border: 0;
 `;
 
-const NavBlock = styled.div`
+
+const SocialBlock = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	height: 80px;
 	width: 100%;
 	border: 0;
+`;
+
+const NavBlock = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+    padding-top: 8em;
+	border: 0;
+
 `;
 
 const BodyWrapper = styled.div`
@@ -121,10 +133,10 @@ class Blog extends Component {
 	    			<Logo>
 							<img src="../../src/media/header-title.png" />
 						</Logo>
-    				<NavBlock>
+    				<SocialBlock>
 							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i className="fab fa-instagram fa-3x"></i></button></a>
 							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i className="fab fa-twitter fa-3x"></i></button></a>
-    				</NavBlock>
+    				</SocialBlock>
     				<NavBlock>
   						<Link to="/">
 	    					<button className="btn btn-success btn-lg">Home</button>

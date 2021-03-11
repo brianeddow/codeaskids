@@ -32,13 +32,34 @@ const Logo = styled.div`
 	position: absolute;
 `;
 
-const NavBlock = styled.div`
+const Footer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
+	border: 0;
+`;
+
+
+const SocialBlock = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	height: 80px;
 	width: 100%;
 	border: 0;
+`;
+
+const NavBlock = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+    padding-top: 8em;
+	border: 0;
+
 `;
 
 const BlockSection = styled.div`
@@ -69,10 +90,10 @@ class Lessons extends Component {
 	    			<Logo>
 							<img src="../../src/media/header-title.png" />
 						</Logo>
-    				<NavBlock>
+    				<SocialBlock>
     					<button className="btn btn-success btn-sm">Extra</button>
     					<button className="btn btn-success btn-sm">Extra</button>
-    				</NavBlock>
+    				</SocialBlock>
     				<NavBlock>
   						<Link to="/">
 	    					<button className="btn btn-success btn-lg">Home</button>

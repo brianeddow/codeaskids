@@ -34,30 +34,40 @@ const HeaderParent = styled.div`
 `;
 
 const WelcomeIntroduction = styled.div`
-  width: 100%;
   height: 300px;
   margin: 0 auto;
   border: 0;
   text-align: center;
+  width: 900px;
+  margin: 2em;
+  padding: 7em 10em 7em 10em;
+  border: 0;
+  background: url(../../src/media/jungle-textbox.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
 `;
 
-const IntroAndMission = styled.div`
+const FaqBlock = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 90vw;
-	height: 200px;
+	width: 300px;
+	height: 400px;
 	margin: 0 auto;
 	border: 0;
+  background: url(../../src/media/jungle-textbox.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 `;
 
 const Faq = styled.div`
 	display: flex;
 	justify-content: center;
-	width: 90vw;
 	height: 200px;
-	border: 1px solid #000;
-	background-color: #eee;
+
 `;
 
 const LearnMore = styled.div`
@@ -86,13 +96,24 @@ const Footer = styled.div`
 	border: 0;
 `;
 
-const NavBlock = styled.div`
+const SocialBlock = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	height: 80px;
 	width: 100%;
 	border: 0;
+`;
+
+const NavBlock = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+    padding-top: 8em;
+	border: 0;
+
 `;
 
 const Logo = styled.div`
@@ -122,10 +143,10 @@ class About extends Component {
 	    			<Logo>
 							<img src="../../src/media/header-title.png" />
 						</Logo>
-    				<NavBlock>
+    				<SocialBlock>
 							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-instagram fa-3x"></i></button></a>
 							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-twitter fa-3x"></i></button></a>
-    				</NavBlock>
+    				</SocialBlock>
     				<NavBlock>
   						<Link to="/">
 	    					<button className="btn btn-success btn-lg">Home</button>
@@ -155,13 +176,14 @@ class About extends Component {
 	    		 </div>
 				</WelcomeIntroduction>
 
-					<IntroAndMission className="row">
+					<FaqBlock className="row">
 						<Faq>
 						 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 							<img src="../../src/media/faq-title.png" width="650" />
 
 							<a href="#question-one" className="btn btn-info" data-toggle="collapse">When was this website created?</a>
-							<div id="question-one" className="collapse">
+						     <div id="question-one" className="collapse">
+									<p><strong>A:</strong> The world of technology is a jungle. Welcome to our jungle and for the monkey...monkeys are awesome and curious.</p>
 							</div>
                             <br/>
 							<a href="#question-two" className="btn btn-info" data-toggle="collapse">How can I help?</a>
@@ -207,7 +229,7 @@ class About extends Component {
 
 					      </div>
 	    			</Faq>
-	    		</IntroAndMission>
+	    		</FaqBlock>
 
 
 					<LearnMore>

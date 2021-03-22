@@ -42,7 +42,7 @@ const WelcomeIntroduction = styled.div`
   margin: 2em;
   padding: 7em 10em 7em 10em;
   border: 0;
-  background: url(../../src/media/jungle-textbox-v2.png);
+  background: url(../../src/media/jungle-textbox-v3.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-right: auto;
@@ -58,7 +58,7 @@ const FaqBlock = styled.div`
 	height: 400px;
 	margin: 0 auto;
 	border: 0;
-  background: url(../../src/media/jungle-textbox-v2.png);
+  background: url(../../src/media/jungle-textbox-v3.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 `;

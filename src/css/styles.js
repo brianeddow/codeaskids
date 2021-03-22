@@ -486,6 +486,26 @@ textarea {
 	}
 }
 
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header-parent{
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.logo{
+
+}
+
+.social-block{
+
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -553,7 +573,7 @@ textarea {
 }
 
 .fa-twitter{
- color: #573F26;
+  color: #573F26;
   margin-left: 1em;
 }
 
@@ -572,38 +592,102 @@ textarea {
 }
 
  .footer-content:hover{
-
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
 
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
-
 }
 
 .footer-content p{
   color: white;
-    font-size: 1.15em;
+   font-size: 1.15em;
 }
 
 .footer-content a{
   color: white;
-   font-size: 1.15em;
+  font-size: 1.15em;
 }
 
 .footer-logo{
-    margin-top: 5.5em;
-    margin-bottom: 1em;
+   margin-top: 5.5em;
+   margin-bottom: 1em;
 }
 
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
-  .timeline-list{
-     list-style: none;
-     margin: 0 0 1.5em -1em;
-  }
+ .timeline-list{
+   list-style: none;
+   margin: 0 0 1.5em -1em;
+ }
+ 
+.welcome-introduction{
+  height: 300px;
+  margin: 0 auto;
+  border: 0;
+  text-align: center;
+  width: 900px;
+  margin: 2em;
+  padding: 7em 10em 7em 10em;
+  border: 0;
+  background: url(../../src/media/jungle-textbox-v3.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
 
+}
+
+ .intro-and-mission {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+	border: 0;
+}
+
+.intro-video{
+    text-align: center;
+    width: 900px;
+    margin: 2em;
+    padding: 7em 10em 7em 10em;
+    border: 0;
+    background: url(../../src/media/jungle-textbox-v3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.mission{
+    text-align: center;
+    width: 900px;
+    margin: 2em;
+    padding: 7em 10em 7em 10em;
+    border: 0;
+    background: url(../../src/media/jungle-textbox-v3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.timeline{
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+  font-size: 24px; 
+  color: ffff#;
+  width: 100%;
+  text-align: center;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  margin-top: 3em;
+  border: 0;
+  background: url(../../src/media/jungle-textbox-v3.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 
 /*--------------------------------------------------------------
 # About

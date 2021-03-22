@@ -19,76 +19,27 @@ const AppWrapper = styled.div`
 `;
 
 const HeaderParent = styled.div`
-	display: block;
-	width: 100%;
-	height: 400px;
-	margin: 0 auto;
-	border: 0;
+
 `;
 
 const WelcomeIntroduction = styled.div`
-  height: 300px;
-  margin: 0 auto;
-  border: 0;
-  text-align: center;
-  width: 900px;
-  margin: 2em;
-  padding: 7em 10em 7em 10em;
-  border: 0;
-  background: url(../../src/media/jungle-textbox-v2.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  margin-right: auto;
-  margin-left: auto;
-  display: table;
+
 `;
 
 const IntroAndMission = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 300px;
-	margin: 0 auto;
-	border: 0;
+
 `;
 
 const IntroVideo = styled.div`
-    text-align: center;
-    width: 900px;
-    margin: 2em;
-    padding: 7em 10em 7em 10em;
-    border: 0;
-    background: url(../../src/media/jungle-textbox-v2.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+
 `;
 
 const Mission = styled.div`
-    text-align: center;
-    width: 900px;
-    margin: 2em;
-    padding: 7em 10em 7em 10em;
-    border: 0;
-    background: url(../../src/media/jungle-textbox-v2.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+
 `;
 
 const Timeline = styled.div`
-  margin-right: auto;
-  margin-left: auto;
-	border: 0;
-  font-size: 24px; 
-  color: ffff#;
-  width: 100%;
-  text-align: center;
-  padding-top: 6em;
-  padding-bottom: 6em;
-  border: 0;
-  background: url(../../src/media/jungle-textbox-v2.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+
 `;
 
 const FooterWrapper = styled.div`
@@ -148,12 +99,16 @@ class Home extends Component {
 	    	<AppWrapper>
 
 					<HeaderParent>
+					  <div class="header-parent">
 						<Logo>
+						 <div class="logo">
 							<img src="../../src/media/header-title.png" />
+						 </div>
 						</Logo>
+					  </div>
     				<SocialBlock>
-							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i className="fab fa-instagram fa-3x"></i></button></a>
-							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i className="fab fa-twitter fa-3x"></i></button></a>
+							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i className="fab fa-instagram fa-4x"></i></button></a>
+							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i className="fab fa-twitter fa-4x"></i></button></a>
     				</SocialBlock>
     				<NavBlock>
   						<Link to="/">
@@ -177,7 +132,8 @@ class Home extends Component {
     				</NavBlock>
 	    		</HeaderParent>
 
-					<WelcomeIntroduction className="row">
+					<WelcomeIntroduction className="">
+					<div class="row welcome-introduction">
 					 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<img src="../../src/media/welcome-title.png" width="350" />
 						<p className="introduction-text">Welcome to Code as Kids and a new ever growing educational website. 
@@ -187,15 +143,20 @@ class Home extends Component {
 						every step of the way and would love to hear your suggestions.
 						Tell your friends! We strive to make 508 compliant content on a web accessible website to leave no kid behind.
 						Our website is constantly being updated and adding new features. Here we believe coding is for everyone!</p>
-	    	          </div>
+					  </div>
+					 </div>
 					</WelcomeIntroduction>
 
-					<IntroAndMission className="row">
-						<IntroVideo className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<IntroAndMission className="">
+					  <div class="row intro-and-mission">
+						 <div class="intro-video col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						   <IntroVideo className="">
 							<img src="../../src/media/hello-title.png" width="250" />
 							<p>A few words from the creators of Code as Kids</p>
-	    			</IntroVideo>
-						<Mission className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						  </IntroVideo>
+						 </div>
+						<Mission className="">
+						 <div class="mission col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 							<img  src="../../src/media/our-mission-title.png" width="450" />
 							<p>Code as Kids mission is to help kids learn to code professionally, creatively and neatly. 
 							We want to instill best practices to our users and students.
@@ -203,11 +164,14 @@ class Home extends Component {
 							The website serves as a great portal and foundation to launch kids' interest in coding, 
 							technology and science. A group of growing volunteers that want
 							to give the gift of learning.</p>
-	    			</Mission>
+						 </div>
+						</Mission>
+					 </div>
 	    		</IntroAndMission>
 						
-					<Timeline className="row">
-					 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<Timeline className="">
+                     <div class="row timeline">
+					  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<p><img src="../../src/media/website-timeline-title.png" width="550" /></p>
 
 						<img src="../../src/media/2020.png" width="150"  />
@@ -229,6 +193,7 @@ class Home extends Component {
 					    </ul>
 
 	    		     </div>
+				    </div>
 	    		</Timeline>
 
 					<FooterWrapper className="row">

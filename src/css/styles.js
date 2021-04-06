@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  
+
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
@@ -493,23 +493,45 @@ textarea {
 .header-parent{
   display: block;
   width: 100%;
-  height: 400px;
+  height: auto;
   margin: 0 auto;
   border: 0;
 }
 
-.logo{
-
-}
-
 .social-block{
-
+  display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 120px;
+	width: 100%;
+	border: 0;
 }
+
+.logo{
+  height: 400px;
+	width: 400px;
+	position: absolute;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.nav-block{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-top: 8em;
+  border: 0;
+}
+
  .btn-lg{
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
     background: url(../../src/media/button-background-main-navbar.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -537,6 +559,15 @@ textarea {
 }
 
  .btn-sm{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+   padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
    background: url(../../src/media/small-banana-background.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -566,6 +597,88 @@ textarea {
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
+.nav-link{
+  color: #fff;
+  display: inline-block;
+  font-weight: 800;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+   padding: 10px 16px;
+   font-size: 18px;
+   line-height: 1.3333333;
+   border-radius: 6px;
+   background: url(../../src/media/button-background-main-navbar.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   box-shadow: none;
+   border: none;
+   margin: 0em 0.5em 0em 0em;
+   width: 150px;
+   height: 55px;
+}
+
+.nav-link:hover {
+    color: #fff;
+ display: inline-block;
+ font-weight: 800;
+ text-align: center;
+ white-space: nowrap;
+ vertical-align: middle;
+   background: url(../../src/media/button-background-main-navbar.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   box-shadow: none;
+   border: none;
+   margin: 0em 0.5em 0em 0em;
+   width: 150px;
+   height: 55px;
+ /* Start the shake animation and make the animation last for 0.5 seconds */
+ animation: shake 0.5s;
+
+ /* When the animation is finished, start again */
+ animation-iteration-count: infinite;
+}
+
+.social-media-link{
+   display: inline-block;
+   font-weight: 400;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+  padding: 5px 10px;
+   font-size: 12px;
+   line-height: 1.5;
+   border-radius: 3px;
+  background: url(../../src/media/small-banana-background.png) !important;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   box-shadow: none;
+   border: none;
+   margin: 0em 0.5em 0em 0em;
+   width: 150px;
+   height: 169px;
+   transform: rotate(25deg) translateX(0px);
+
+}
+
+.social-media-link:hover{
+   background: url(../../src/media/small-banana-background.png) !important;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   box-shadow: none;
+   border: none;
+   margin: 0em 0.5em 0em 0em;
+   width: 150px;
+   height: 169px;
+   transform: rotate(15deg) translateX(0px);
+   transform: rotate(15deg) translateX(0px);
+ /* Start the shake animation and make the animation last for 0.5 seconds */
+ animation: hang 1.5s;
+
+ /* When the animation is finished, start again */
+ animation-iteration-count: infinite;
+}
 
 .fa-instagram{
  color: #573F26;
@@ -580,6 +693,19 @@ textarea {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.footer-wrapper{
+  padding: 10px;
+  opacity: 0.7;
+}
+
+.footer{
+  text-align: center;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  color: #000;
+}
+
  .footer-content{
     background: url(../../src/media/footer-wood-textarea.png);
     background-size: contain;
@@ -615,13 +741,28 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Body/Content
+--------------------------------------------------------------*/
+.body-tag{
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: auto;
+}
+
+.app-wrapper{
+  margin: 0 auto;
+  background: url('../../src/media/code-as-kids-medium-desktop-background.gif');
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
  .timeline-list{
    list-style: none;
    margin: 0 0 1.5em -1em;
  }
- 
+
 .welcome-introduction{
   height: 300px;
   margin: 0 auto;
@@ -676,7 +817,7 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   border: 0;
-  font-size: 24px; 
+  font-size: 24px;
   color: ffff#;
   width: 100%;
   text-align: center;
@@ -692,6 +833,71 @@ textarea {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about-wrapper{
+  margin: 0 auto;
+  background: url('../../src/media/code-as-kids-medium-desktop-background.gif');
+  background-size: cover;
+}
+
+.block-wrapper{
+  display: flex;
+  justify-content: space-around;
+  width: 99.9%;
+  border: 0;
+}
+.faq-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 0;
+  background: url(../../src/media/jungle-textbox-v3.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.faq{
+  display: block;
+  justify-content: center;
+  height:  auto;
+  margin-right: auto;
+    margin-left: auto;
+    display: table;
+    width: min-content;
+}
+
+.faq-title{
+  margin-left: auto;
+  margin-right: auto;
+  display: table;  
+}
+
+.faq p {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+    text-align: left;
+    margin: 1em 3em 0em 9em;
+}
+
+.learn-more{
+  display: block;
+  margin: 0 auto;
+  height: 375px;
+  width: 90vw;
+  border: 0;
+}
+
+.learn-more-item{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border: 0;
+}
+
 .btn-info {
     color: #fff;
     text-align: left;
@@ -726,6 +932,51 @@ btn-info:hover {
     font-weight: 800;
     padding: 2em 1em 1em 5em;
     margin: 1em 1em 1em 1em;
+}
+
+.accordion {
+    color: #fff;
+    text-align: left;
+    background: url(../../src/media/log-background.png);
+    background-size: revert;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    border-color: transparent;
+    width: 1666px;
+    height: 208px;
+    font-size: 3.25em;
+    font-weight: 800;
+    padding: 2em 1em 1em 5em;
+    margin: 1em 1em 1em 1em;
+}
+
+.accordion:hover {
+    color: #fff;
+    text-align: left;
+    background: url(../../src/media/log-background.png);
+    background-size: revert;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    border-color: transparent;
+    width: 1666px;
+    height: 208px;
+    font-size: 3.25em;
+    font-weight: 800;
+    padding: 2em 1em 1em 5em;
+    margin: 1em 1em 1em 1em;
+}
+
+.collapse.in {
+    display: block;
+    background: white;
+    margin: -7em 8em 0em 8em;
+    padding: 8em 0em 8em 0em;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 /*--------------------------------------------------------------
@@ -769,12 +1020,12 @@ btn-info:hover {
 
 
   @media only screen and (max-width: 1441px) {
-    
+
 
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-   
+
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -786,7 +1037,7 @@ btn-info:hover {
   }
 
   @media only screen and (min-width: 0px) and (max-width: 639px) {
-   
+
   }
 
 `;

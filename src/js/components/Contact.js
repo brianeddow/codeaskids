@@ -1,94 +1,49 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import ErrorBoundary from "./ErrorBoundary";
 import GlobalStyles from '../../css/styles.js';
+import ErrorBoundary from "./ErrorBoundary";
 
 import { Link } from "react-router-dom";
 
 
 const BodyTag = styled.div`
-	position: absolute;
-	left: 0; top: 0;
-	right: 0; bottom: auto;
+
 `;
 
-const AboutWrapper = styled.div`
-	margin: 0 auto;
-	background: url('../../src/media/code-as-kids-medium-desktop-background.gif');
-	background-size: cover;
+const AppWrapper = styled.div`
+
 `;
 
 const HeaderParent = styled.div`
-	display: block;
-	width: 100%;
-	height: 400px;
-	margin: 0 auto;
-	border: 0;
+
+`;
+
+const WelcomeIntroduction = styled.div`
+
+`;
+
+
+const FooterWrapper = styled.div`
+
 `;
 
 const Footer = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 50px;
-	border: 0;
+
 `;
 
 const SocialBlock = styled.div`
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 80px;
-	width: 100%;
-	border: 0;
+
 `;
 
 const NavBlock = styled.div`
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 80px;
-	width: 100%;
-    padding-top: 8em;
-	border: 0;
 
-`;
 
-const BodyWrapper = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	padding-top: 20px;
-`;
-
-const BlockSection = styled.div`
-	display: block;
-	width: 90%;
-	min-height: 300px;
-	border: 0;
-`;
-
-const Column = styled.div`
-	display: inline-block;
-	width: 49.84%;
-	height: 300px;
-	border: 1px solid #000;
-`;
-
-const ContactBlockTop = styled.div`
-	diplay: block;
-	width: 100%;
-	height: 100px;
-	border: 0;
 `;
 
 const Logo = styled.div`
-	height: 400px;
-	width: 400px;
-	position: absolute;
+
 `;
+
 
 class Contact extends Component {
   constructor(props) {
@@ -100,74 +55,77 @@ class Contact extends Component {
 
     	<ErrorBoundary>
 
-    		<BodyTag>
-
+    	<BodyTag>
+			 <div class="body-tag">
     		<GlobalStyles />
 
-	    	<AboutWrapper>
-
-	    		<HeaderParent>
-	    			<Logo>
+	    	<AppWrapper>
+				 <div class="app-wrapper">
+					<HeaderParent>
+					  <div class="header-parent">
+						<Logo>
+						 <div class="logo">
 							<img src="../../src/media/header-title.png" />
+						 </div>
 						</Logo>
-    				<SocialBlock>
-							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-instagram fa-3x"></i></button></a>
-							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn btn-success btn-sm"><i class="fab fa-twitter fa-3x"></i></button></a>
-    				</SocialBlock>
-    				<NavBlock>
-  						<Link to="/">
-	    					<button className="btn btn-success btn-lg">Home</button>
-	    				</Link>
-	    				<Link to="/about">
-	    					<button className="btn btn-success btn-lg">About</button>
-	    				</Link>
-	    				<Link to="/blog">
-	    					<button className="btn btn-success btn-lg">Blog</button>
-	    				</Link>
-	    				<Link to="/coding">
-	    					<button className="btn btn-success btn-lg">Coding</button>
-	    				</Link>
-	    				<Link to="/lessons">
-	    					<button className="btn btn-success btn-lg">Lessons</button>
-	    				</Link>
-	    				<Link to="/contact">
-	    					<button className="btn btn-success btn-lg">Contact</button>
-	    				</Link>
-    				</NavBlock>
+					  </div>
+						<SocialBlock>
+						<div class="social-block">
+							<a href="https://www.instagram.com/code_as_kids" target="_blank" rel="noopener noreferrer"><button className="btn social-media-link"><i className="fab fa-instagram fa-4x"></i></button></a>
+							<a href="https://twitter.com/codeaskids" target="_blank" rel="noopener noreferrer"><button className="btn social-media-link"><i className="fab fa-twitter fa-4x"></i></button></a>
+						 </div>
+						</SocialBlock>
+						<NavBlock>
+						 <div class="social-block">
+							<Link to="/">
+								<button className="btn nav-link">Home</button>
+							</Link>
+							<Link to="/about">
+								<button className="btn nav-link">About</button>
+							</Link>
+							<Link to="/blog">
+								<button className="btn nav-link">Blog</button>
+							</Link>
+							<Link to="/coding">
+								<button className="btn nav-link">Coding</button>
+							</Link>
+							<Link to="/lessons">
+								<button className="btn nav-link">Lessons</button>
+							</Link>
+							<Link to="/contact">
+								<button className="btn nav-link">Contact</button>
+							</Link>
+							</div>
+						</NavBlock>
 	    		</HeaderParent>
 
-					<div className="row">
-						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-							<img src="../../src/media/about-us-title.png" width="650" />
-							<p className="introduction-text">Feel free to contact us about suggestions, advertisement offers, volunteering and questions.
-							Volunteers can contribute by writing articles, creating graphic designs and much more. Let us know how you’d like to contribute
-							to helping kids and adults learn code the right way. All content will be reviewed by website administrators prior to posting.</p>
+					<WelcomeIntroduction className="">
+					<div class="row welcome-introduction">
+					 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<img src="../../src/media/contact-title.png" width="350" />
+						<p className="introduction-text">Feel free to contact us about suggestions, advertisement offers, volunteering and questions.
+						Volunteers can contribute by writing articles, creating graphic designs and much more. Let us know how youâ€™d like to contribute to helping kids and adults learn code the right way. All content will be reviewed by website administrators prior to posting.</p>
+					  </div>
+					 </div>
+					</WelcomeIntroduction>
+
+					<FooterWrapper className="">
+					 <div class="row footer-wrapper">
+						<Footer className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<div class="footer">
+						 <div className="footer-content">
+					     <img className="footer-logo" src="../../src/media/footer-logo.png" width="100" height="100"/>
+							<p><a href="">Site Map</a> | <a href="">Mission Statement</a> | <a href="">Web Accessibility</a> | <a href="">Privacy Policy</a></p>
+							<p>Copyright 2021 Code as Kids, All Rights Reserved <i>Version 1.0</i></p>
+						 </div>
+						 </div>
+		    		</Footer>
 						</div>
-					</div>
-
-					<img src="../../src/learn-more-title.png" width="350" />
-					<p>Learn More</p>
-					<p>Lessons CTA</p>
-					<p>Coding CTA</p>
-					<p>Blog CTA</p>
-
-					<img src="../../src/social-media-title.png" width="350" />
-				
-					<img src="../../src/facebook-title.png" width="250" />
-					<p>Give us a follow on Facebook!</p>
-				
-			
-					<img src="../../src/instagram-title.png" width="250" />
-					<p>Give us a follow on Instagram!</p>
-				
-			
-					<img src="../../src/twitter-title.png" width="250" />
-					<p>Give us a follow on Twitter!</p>
-					
-
-	    	</AboutWrapper>
-
-	    	</BodyTag>
+		    	</FooterWrapper>
+         </div>
+	    	</AppWrapper>
+       </div>
+	    </BodyTag>
 
 	    </ErrorBoundary>
     );

@@ -165,13 +165,13 @@ class About extends Component {
 								<p><strong>A:</strong> We strive to meet these standards so all kids can get the most out of the knowledge we wish to share on our website. We are always open to suggestions on improving our accessibility or any special requests we will try to meet.</p>
 							</div>
 							<br/>
-							<a href="#question-seven" className="btn accordion" data-toggle="collapse">How can I volunteer?</a>
-							<div id="question-seven" className="collapse">
+							<a href="#question-eight" className="btn accordion" data-toggle="collapse">How can I volunteer?</a>
+							<div id="question-eight" className="collapse">
 								<p><strong>A:</strong> Please go to our contact page and click the "Volunteer" button.</p>
 							</div>
 							<br/>
-							<a href="#question-seven" className="btn accordion" data-toggle="collapse">Are there any rules for the website</a>
-							<div id="question-seven" className="collapse">
+							<a href="#question-nine" className="btn accordion" data-toggle="collapse">Are there any rules for the website</a>
+							<div id="question-nine" className="collapse">
 								<p><strong>A:</strong> Yes, a few to help ensure everyone has a fun and safe experience. 1. If comments become a feature no foul language, bullying or negative behavior. 2. If you volunteer please take your responsibilities seriously. 3. Coding can be frustrating please do not take it out on us. </p>
 							</div>
 							</div>
